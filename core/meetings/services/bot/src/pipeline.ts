@@ -217,8 +217,9 @@ export function createBotPipeline(
     // For a single speaker, this is 12 RPM. Well within the 50 RPM limit.
     safeConfig = {
       submitInterval: 5,
-      minAudioDuration: 5,
-      maxBufferDuration: 30
+      minAudioDuration: 2,
+      maxBufferDuration: 30,
+      idleTimeoutSec: 5
     };
   }
 
