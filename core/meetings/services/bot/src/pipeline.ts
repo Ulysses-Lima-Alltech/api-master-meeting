@@ -206,8 +206,21 @@ export function createBotPipeline(
   opts: { transcribe?: Transcribe; config?: SpeakerStreamManagerConfig; onError?: (e: unknown) => void } = {},
 ): BotPipeline {
   const transcribe = opts.transcribe ?? createTranscribe(inv);
+  
+  // FIX: OpenAI Whisper API has strict 50 RPM limits (Tier 1). 
+  // Real-time chunking (default 2s) easily hits this limit and crashes transcription.
+  // If OpenAI is detected, increase the submission interval to 20s to stay well below limits.
+  let safeConfig = opts.config;
+  if (!safeConfig && inv.transcriptionServiceUrl?.includes('api.openai.com')) {
+    safeConfig = {
+      submitInterval: 20,
+      minAudioDuration: 20,
+      maxBufferDuration: 60
+    };
+  }
+
   if (inv.platform === 'zoom' || inv.platform === 'teams') {
     return createMixedBotPipeline(transcribe, sink, inv.language ?? undefined, opts.onError);
   }
-  return createGmeetBotPipeline(transcribe, sink, opts.config, opts.onError);
+  return createGmeetBotPipeline(transcribe, sink, safeConfig, opts.onError);
 }

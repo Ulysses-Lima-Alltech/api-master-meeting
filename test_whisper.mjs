@@ -1,0 +1,1 @@
+import { TranscriptionClient } from './core/meetings/modules/whisper/dist/transcription-client.js'; const client = new TranscriptionClient({ serviceUrl: process.env.TRANSCRIPTION_SERVICE_URL, apiToken: process.env.TRANSCRIPTION_SERVICE_TOKEN }); client.transcribe(new Float32Array(16000)).then(console.log).catch(console.error);
