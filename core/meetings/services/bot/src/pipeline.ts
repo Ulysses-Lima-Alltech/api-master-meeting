@@ -212,10 +212,13 @@ export function createBotPipeline(
   // If OpenAI is detected, increase the submission interval to 20s to stay well below limits.
   let safeConfig = opts.config;
   if (!safeConfig && inv.transcriptionServiceUrl?.includes('api.openai.com')) {
+    // OpenAI Whisper has a 50 RPM limit for Tier 1.
+    // submitInterval: 5 gives a 5-second cadence (near real-time).
+    // For a single speaker, this is 12 RPM. Well within the 50 RPM limit.
     safeConfig = {
-      submitInterval: 20,
-      minAudioDuration: 20,
-      maxBufferDuration: 60
+      submitInterval: 5,
+      minAudioDuration: 5,
+      maxBufferDuration: 30
     };
   }
 

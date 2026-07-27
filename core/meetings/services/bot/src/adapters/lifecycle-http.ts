@@ -21,7 +21,7 @@ import type { LifecycleSink } from '../ports.js';
  *  inject a fake without pulling in DOM/undici types. */
 export type FetchLike = (
   url: string,
-  init: { method: string; headers: Record<string, string>; body: string },
+  init: { method: string; headers: Record<string, string>; body: string; signal?: AbortSignal },
 ) => Promise<{ ok: boolean; status: number }>;
 
 export interface HttpLifecycleSinkOptions {
@@ -63,7 +63,12 @@ export function createHttpLifecycleSink(opts: HttpLifecycleSinkOptions): Lifecyc
     let lastErr: string | undefined;
     for (let attempt = 1; attempt <= attempts; attempt++) {
       try {
-        const res = await fetchImpl(callbackUrl, { method: 'POST', headers, body });
+        const res = await fetchImpl(callbackUrl, {
+          method: 'POST',
+          headers,
+          body,
+          signal: AbortSignal.timeout(5000)
+        });
         if (res.ok) return; // 2xx — delivered
         lastErr = `HTTP ${res.status}`;
       } catch (e) {
