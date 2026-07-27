@@ -1,0 +1,1226 @@
+﻿
+Starting Container
+==============================================
+  Vexa Lite (v0.12) ΓÇö starting container
+==============================================
+Configuration:
+  - Redis URL:        redis://default:uQbMydyOuTDLyvSKfiiQPpMwoFhBVuWq@redis.railway.internal:6379
+  - Database:         postgresql+asyncpg://postgres:***@postgres.railway.internal:5432/railway
+  - Transcription:    https://api.openai.com/v1/audio/transcriptions
+  - Object storage:   minio:9000
+  - Log level:        info
+
+Configuring Nginx on PORT 3001...
+[provision-key] waiting for admin-api...
+Starting services via supervisord...
+2026-07-20 04:15:17,132 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified 
+in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-07-20 04:15:17,134 INFO RPC interface 'supervisor' initialized
+2026-07-20 04:15:17,134 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2026-07-20 04:15:17,134 INFO supervisord started with pid 1
+2026-07-20 04:15:18,136 INFO spawned: 'redis' with pid 10
+2026-07-20 04:15:18,137 INFO spawned: 'xvfb' with pid 11
+2026-07-20 04:15:18,138 INFO spawned: 'fluxbox' with pid 12
+2026-07-20 04:15:18,139 INFO spawned: 'pulseaudio' with pid 13
+2026-07-20 04:15:18,140 INFO spawned: 'pulseaudio-setup' with pid 14
+2026-07-20 04:15:18,141 INFO spawned: 'x11vnc' with pid 15
+2026-07-20 04:15:18,142 INFO spawned: 'websockify' with pid 16
+2026-07-20 04:15:18,143 INFO spawned: 'admin-api' with pid 17
+2026-07-20 04:15:18,144 INFO spawned: 'runtime' with pid 19
+10:M 20 Jul 2026 04:15:18.146 # WARNING overcommit_memory is set to 0! Background save may fail under low memory 
+condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 
+'sysctl vm.overcommit_memory=1' for this to take effect.
+10:M 20 Jul 2026 04:15:18.146 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This 
+will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > 
+/sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting 
+after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+10:M 20 Jul 2026 04:15:18.147 * Ready to accept connections
+10:C 20 Jul 2026 04:15:18.143 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+10:C 20 Jul 2026 04:15:18.143 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=10, just started
+2026-07-20 04:15:18,146 INFO spawned: 'agent-api' with pid 21
+10:C 20 Jul 2026 04:15:18.143 # Configuration loaded
+2026-07-20 04:15:18,147 INFO spawned: 'meeting-api' with pid 23
+10:M 20 Jul 2026 04:15:18.146 * Running mode=standalone, port=6379.
+10:M 20 Jul 2026 04:15:18.146 # Server initialized
+2026-07-20 04:15:18,148 INFO spawned: 'gateway' with pid 27
+2026-07-20 04:15:18,149 INFO spawned: 'terminal' with pid 29
+2026-07-20 04:15:18,149 INFO spawned: 'master-meeting-site' with pid 30
+2026-07-20 04:15:18,150 INFO spawned: 'nginx' with pid 32
+2026-07-20 04:15:18,151 INFO success: pulseaudio-setup entered RUNNING state, process has stayed up for > than 0 
+seconds (startsecs)
+Warning: Failed to open file(/usr/share/fluxbox/nls/C.UTF-8/fluxbox.cat)
+for translation, using default messages.
+W: [pulseaudio] main.c: Running in system mode, but --disallow-module-loading not set.
+N: [pulseaudio] main.c: Running in system mode, forcibly disabling SHM mode.
+N: [pulseaudio] main.c: Running in system mode, forcibly disabling exit idle time.
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+E: [pulseaudio] core-util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: 
+No such file or directory
+W: [pulseaudio] main.c: Home directory of user 'pulse' is not '/var/run/pulse', ignoring.
+W: [pulseaudio] main.c: OK, so you are running PA in system mode. Please make sure that you actually do want to do 
+that.
+W: [pulseaudio] main.c: Please read 
+http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/WhatIsWrongWithSystemWide/ for an explanation 
+why system mode is usually a bad idea.
+W: [pulseaudio] authkey.c: Failed to open cookie file '/var/run/pulse/.config/pulse/cookie': No such file or directory
+W: [pulseaudio] authkey.c: Failed to load authentication key '/var/run/pulse/.config/pulse/cookie': No such file or 
+directory
+W: [pulseaudio] authkey.c: Failed to open cookie file '/var/run/pulse/.pulse-cookie': No such file or directory
+W: [pulseaudio] authkey.c: Failed to load authentication key '/var/run/pulse/.pulse-cookie': No such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+W: [pulseaudio] cli-command.c: stat('/etc/pulse/system.pa.d'): No such file or directory
+W: [pulseaudio] main.c: Unable to contact D-Bus: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket 
+/run/dbus/system_bus_socket: No such file or directory
+Xlib:  extension "DPMS" missing on display ":99".
+20/07/2026 04:15:18 *** unrecognized option(s) ***
+20/07/2026 04:15:18 	[1]  -127.0.0.1
+20/07/2026 04:15:18 For a list of options run: x11vnc -opts
+20/07/2026 04:15:18 or for the full help: x11vnc -help
+20/07/2026 04:15:18 
+20/07/2026 04:15:18 Here is a list of removed or obsolete options:
+20/07/2026 04:15:18 
+20/07/2026 04:15:18 removed: -hints, -nohints
+20/07/2026 04:15:18 removed: -cursorposall
+20/07/2026 04:15:18 removed: -nofilexfer, now the default.
+20/07/2026 04:15:18 
+20/07/2026 04:15:18 renamed: -old_copytile, use -onetile
+20/07/2026 04:15:18 renamed: -mouse,   use -cursor
+20/07/2026 04:15:18 renamed: -mouseX,  use -cursor X
+20/07/2026 04:15:18 renamed: -X,       use -cursor X
+20/07/2026 04:15:18 renamed: -nomouse, use -nocursor
+20/07/2026 04:15:18 renamed: -old_pointer, use -pointer_mode 1
+
+> master-meeting-site@0.1.0 start
+> next start -H ::
+
+2026-07-20 04:15:18,231 INFO exited: x11vnc (exit status 1; not expected)
+WebSocket server settings:
+  - Listen on :6080
+  - Web server. Web root: /usr/share/novnc
+  - No SSL/TLS support (no cert file)
+  - proxying from :6080 to 127.0.0.1:5900
+Γû▓ Next.js 16.2.10
+- Local:         http://[::1]:3000
+- Network:       http://[::]:3000
+Γ£ô Ready in 89ms
+> Terminal ready on http://0.0.0.0:3002 (WS proxy /ws -> ws://127.0.0.1:8056/ws)
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8056
+  }
+}
+[terminal-api] workspace read proxy failed TypeError: fetch failed
+    at async z (.next/server/app/api/workspace/[...seg]/route.js:1:1473)
+    at async k (.next/server/app/api/workspace/[...seg]/route.js:1:5131)
+    at async g (.next/server/app/api/workspace/[...seg]/route.js:1:6134)
+    at async G (.next/server/app/api/workspace/[...seg]/route.js:1:7256) {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:8056
+      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:8056) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+[terminal-api] workspace read proxy failed TypeError: fetch failed
+    at async z (.next/server/app/api/workspace/[...seg]/route.js:1:1473)
+    at async k (.next/server/app/api/workspace/[...seg]/route.js:1:5131)
+    at async g (.next/server/app/api/workspace/[...seg]/route.js:1:6134)
+    at async G (.next/server/app/api/workspace/[...seg]/route.js:1:7256) {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:8056
+      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:8056) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 8056
+  }
+}
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+E: [null-sink] util.c: Failed to connect to system bus: Failed to connect to socket /run/dbus/system_bus_socket: No 
+such file or directory
+10
+11
+W: [pulseaudio] module-remap-source.c: No remapping configured, proceeding nonetheless!
+2026-07-20 04:15:19,173 INFO exited: pulseaudio-setup (exit status 0; expected)
+2026-07-20 04:15:20,175 INFO success: redis entered RUNNING state, process has stayed up for > than 2 seconds 
+(startsecs)
+2026-07-20 04:15:20,179 INFO success: xvfb entered RUNNING state, process has stayed up for > than 2 seconds 
+(startsecs)
+2026-07-20 04:15:20,179 INFO success: fluxbox entered RUNNING state, process has stayed up for > than 2 seconds 
+(startsecs)
+2026-07-20 04:15:20,179 INFO success: pulseaudio entered RUNNING state, process has stayed up for > than 2 seconds 
+(startsecs)
+2026-07-20 04:15:20,180 INFO spawned: 'x11vnc' with pid 195
+2026-07-20 04:15:20,182 INFO success: websockify entered RUNNING state, process has stayed up for > than 2 seconds 
+(startsecs)
+2026-07-20 04:15:20,182 INFO success: nginx entered RUNNING state, process has stayed up for > than 2 seconds 
+(startsecs)
+Xlib:  extension "DPMS" missing on display ":99".
+20/07/2026 04:15:20 *** unrecognized option(s) ***
+20/07/2026 04:15:20 	[1]  -127.0.0.1
+20/07/2026 04:15:20 For a list of options run: x11vnc -opts
+20/07/2026 04:15:20 or for the full help: x11vnc -help
+20/07/2026 04:15:20 
+20/07/2026 04:15:20 Here is a list of removed or obsolete options:
+20/07/2026 04:15:20 
+20/07/2026 04:15:20 removed: -hints, -nohints
+20/07/2026 04:15:20 removed: -cursorposall
+20/07/2026 04:15:20 removed: -nofilexfer, now the default.
+20/07/2026 04:15:20 
+20/07/2026 04:15:20 renamed: -old_copytile, use -onetile
+20/07/2026 04:15:20 renamed: -mouse,   use -cursor
+20/07/2026 04:15:20 renamed: -mouseX,  use -cursor X
+20/07/2026 04:15:20 renamed: -X,       use -cursor X
+20/07/2026 04:15:20 renamed: -nomouse, use -nocursor
+20/07/2026 04:15:20 renamed: -old_pointer, use -pointer_mode 1
+2026-07-20 04:15:20,207 INFO exited: x11vnc (exit status 1; not expected)
+[terminal-server] upstream websocket error Error: connect ECONNREFUSED 127.0.0.1:8056
+    at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:8056) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8056
+}
+INFO:     Started server process [21]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8100 (Press CTRL+C to quit)
+INFO:     Started server process [19]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8090 (Press CTRL+C to quit)
+INFO:     Started server process [27]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8056 (Press CTRL+C to quit)
+2026-07-20T04:15:20.818063997Z [DBUG]  ts="2026-07-20T04:15:20.588550Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="4a3306077afd4f7bbd690a59772c1a81" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37588 - "GET /user/calendar HTTP/1.1" 401 Unauthorized
+INFO:     ('127.0.0.1', 37590) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 37596) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+2026-07-20T04:15:20.818100126Z [DBUG]  ts="2026-07-20T04:15:20.783381Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="317af3854e65475591a209b5d557836b" 
+audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 401 Unauthorized
+2026-07-20T04:15:20.818108026Z [DBUG]  ts="2026-07-20T04:15:20.797759Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="8e322b8a54574d0ab37586630f8f769d" 
+audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 401 Unauthorized
+2026-07-20T04:15:20.924665214Z [DBUG]  ts="2026-07-20T04:15:20.919254Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="12e57fc2a69c45aead0dbf71eb9a8377" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37588 - "GET /user/calendar HTTP/1.1" 401 Unauthorized
+INFO:     ('127.0.0.1', 37598) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+2026-07-20T04:15:20.998936752Z [DBUG]  ts="2026-07-20T04:15:20.995262Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="0aecf18504ec44a4acf64e347f9b82cd" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37588 - "GET /user/calendar HTTP/1.1" 401 Unauthorized
+/app/admin-api/src/admin_api/__main__.py:36: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+2026-07-20T04:15:21.060558597Z [DBUG]  ts="2026-07-20T04:15:21.056000Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="2ba9c34609924da5a04341b42bc4d480" 
+audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 401 Unauthorized
+INFO:     Started server process [17]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-07-20T04:15:21.204468531Z [DBUG]  ts="2026-07-20T04:15:21.199993Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="b9d5b633939242ee8a811f8a9a44924e" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:21.222819958Z [INFO]  ts="2026-07-20T04:15:21.221785Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="b9d5b633939242ee8a811f8a9a44924e" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36952 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:21.229532288Z [DBUG]  ts="2026-07-20T04:15:21.228341Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="b9d5b633939242ee8a811f8a9a44924e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37588 - "GET /user/calendar HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 37608) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20T04:15:21.928550122Z [DBUG]  ts="2026-07-20T04:15:21.927556Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="9cd6d60f65e048e98cfe1ec65f1d02e0" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:15:21.941858935Z [INFO]  ts="2026-07-20T04:15:21.935948Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="9cd6d60f65e048e98cfe1ec65f1d02e0" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 502 Bad Gateway
+INFO:     ('127.0.0.1', 37614) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20T04:15:22.221398605Z [DBUG]  ts="2026-07-20T04:15:22.212147Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="302e537b88bf4d91ad666534590093fd" 
+audience="system" event="request_received" span="edge"
+2026-07-20 04:15:22,213 INFO spawned: 'x11vnc' with pid 219
+2026-07-20T04:15:22.221407835Z [INFO]  ts="2026-07-20T04:15:22.219702Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="302e537b88bf4d91ad666534590093fd" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 502 Bad Gateway
+Xlib:  extension "DPMS" missing on display ":99".
+20/07/2026 04:15:22 *** unrecognized option(s) ***
+20/07/2026 04:15:22 	[1]  -127.0.0.1
+20/07/2026 04:15:22 For a list of options run: x11vnc -opts
+20/07/2026 04:15:22 or for the full help: x11vnc -help
+20/07/2026 04:15:22 
+20/07/2026 04:15:22 Here is a list of removed or obsolete options:
+20/07/2026 04:15:22 
+20/07/2026 04:15:22 removed: -hints, -nohints
+20/07/2026 04:15:22 removed: -cursorposall
+20/07/2026 04:15:22 removed: -nofilexfer, now the default.
+20/07/2026 04:15:22 
+20/07/2026 04:15:22 renamed: -old_copytile, use -onetile
+20/07/2026 04:15:22 renamed: -mouse,   use -cursor
+20/07/2026 04:15:22 renamed: -mouseX,  use -cursor X
+20/07/2026 04:15:22 renamed: -X,       use -cursor X
+20/07/2026 04:15:22 renamed: -nomouse, use -nocursor
+20/07/2026 04:15:22 renamed: -old_pointer, use -pointer_mode 1
+INFO:     ('127.0.0.1', 37626) - "WebSocket /ws" [accepted]
+2026-07-20 04:15:22,406 INFO exited: x11vnc (exit status 1; not expected)
+INFO:     connection open
+2026-07-20T04:15:22.512009731Z [DBUG]  ts="2026-07-20T04:15:22.509376Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="99325670dde14dfd939779e8d60a3a8a" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:15:22.517131755Z [INFO]  ts="2026-07-20T04:15:22.515842Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="99325670dde14dfd939779e8d60a3a8a" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 502 Bad Gateway
+INFO:     ('127.0.0.1', 37642) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20T04:15:22.754287645Z [DBUG]  ts="2026-07-20T04:15:22.751190Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="7005f0ed54da4a46808d209fbef3285b" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:15:22.760454714Z [INFO]  ts="2026-07-20T04:15:22.758503Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="7005f0ed54da4a46808d209fbef3285b" audience="user" event="request_accepted" span="auth" 
+user_id=4
+INFO:     127.0.0.1:37588 - "GET /meetings HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:36962 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36978 - "GET /admin/users/email/self-host%40vexa.ai HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36990 - "POST /admin/users/1/tokens?scopes=bot,tx HTTP/1.1" 201 Created
+INFO:     Started server process [23]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2026-07-20 04:15:23,152 INFO success: terminal entered RUNNING state, process has stayed up for > than 5 seconds 
+(startsecs)
+2026-07-20 04:15:23,152 INFO success: master-meeting-site entered RUNNING state, process has stayed up for > than 5 
+seconds (startsecs)
+INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36998 - "GET /internal/calendar-configs HTTP/1.1" 200 OK
+2026-07-20 04:15:23,210 INFO waiting for terminal to stop
+2026-07-20 04:15:23,233 INFO stopped: terminal (terminated by SIGTERM)
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+2026-07-20 04:15:23,236 INFO spawned: 'terminal' with pid 229
+Failed to read: session.appsFile
+Failed to read: session.ignoreBorder
+Setting default value
+Setting default value
+Failed to read: session.tabsAttachArea
+Failed to read: session.forcePseudoTransparency
+Setting default value
+Failed to read: session.colorsPerChannel
+Setting default value
+Failed to read: session.doubleClickInterval
+Setting default value
+Setting default value
+Failed to read: session.cacheLife
+Failed to read: session.tabPadding
+Setting default value
+Setting default value
+Failed to read: session.styleOverlay
+Failed to read: session.cacheMax
+Setting default value
+Setting default value
+Failed to read: session.slitlistFile
+Failed to read: session.autoRaiseDelay
+Setting default value
+Setting default value
+Failed to read: session.ignoreBorder
+Setting default value
+Failed to read: session.forcePseudoTransparency
+Setting default value
+Failed to read: session.cacheMax
+Setting default value
+Failed to read: session.autoRaiseDelay
+Setting default value
+Failed to read: session.colorsPerChannel
+Setting default value
+Failed to read: session.doubleClickInterval
+Setting default value
+Failed to read: session.tabPadding
+Setting default value
+Failed to read: session.styleOverlay
+Setting default value
+Failed to read: session.slitlistFile
+Setting default value
+Failed to read: session.appsFile
+Setting default value
+Failed to read: session.tabsAttachArea
+Setting default value
+Failed to read: session.cacheLife
+Setting default value
+Failed to read: session.screen0.opaqueMove
+Setting default value
+Setting default value
+Failed to read: session.screen0.fullMaximization
+Failed to read: session.screen0.noFocusWhileTypingDelay
+Setting default value
+Setting default value
+Failed to read: session.screen0.maxIgnoreIncrement
+Failed to read: session.screen0.workspaces
+Setting default value
+Failed to read: session.screen0.maxDisableMove
+Setting default value
+Failed to read: session.screen0.maxDisableResize
+Setting default value
+Failed to read: session.screen0.workspacewarping
+Setting default value
+Failed to read: session.screen0.showwindowposition
+Setting default value
+Failed to read: session.screen0.autoRaise
+Setting default value
+Failed to read: session.screen0.clickRaises
+Setting default value
+Failed to read: session.screen0.defaultDeco
+Setting default value
+Failed to read: session.screen0.tab.placement
+Setting default value
+Failed to read: session.screen0.windowMenu
+Setting default value
+Failed to read: session.screen0.edgeSnapThreshold
+Setting default value
+Failed to read: session.screen0.window.focus.alpha
+Setting default value
+Failed to read: session.screen0.window.unfocus.alpha
+Setting default value
+Failed to read: session.screen0.tabs.usePixmap
+Failed to read: session.screen0.menu.alpha
+Setting default value
+Failed to read: session.screen0.menuDelay
+Setting default value
+Setting default value
+Failed to read: session.screen0.tab.width
+Setting default value
+Failed to read: session.screen0.tooltipDelay
+Failed to read: session.screen0.tabs.maxOver
+Setting default value
+Setting default value
+Failed to read: session.screen0.allowRemoteActions
+Setting default value
+Failed to read: session.screen0.tabs.intitlebar
+Failed to read: session.screen0.clientMenu.usePixmap
+Setting default value
+Setting default value
+Failed to read: session.screen0.focusModel
+Setting default value
+Failed to read: session.colorsPerChannel
+Failed to read: session.screen0.tabFocusModel
+Setting default value
+Setting default value
+Failed to read: session.screen0.focusNewWindows
+Failed to read: session.doubleClickInterval
+Setting default value
+Setting default value
+Failed to read: session.screen0.focusSameHead
+Setting default value
+Failed to read: session.tabPadding
+Failed to read: session.screen0.rowPlacementDirection
+Setting default value
+Setting default value
+Failed to read: session.screen0.colPlacementDirection
+Failed to read: session.styleOverlay
+Setting default value
+Failed to read: session.screen0.windowPlacement
+Setting default value
+Setting default value
+Failed to read: session.ignoreBorder
+Failed to read: session.slitlistFile
+Setting default value
+Setting default value
+Failed to read: session.forcePseudoTransparency
+Setting default value
+Failed to read: session.appsFile
+Setting default value
+Failed to read: session.tabsAttachArea
+Setting default value
+Setting default value
+Failed to read: session.cacheLife
+Failed to read: session.screen0.clickRaises
+Setting default value
+Failed to read: session.cacheMax
+Setting default value
+Setting default value
+Failed to read: session.screen0.showwindowposition
+Failed to read: session.screen0.maxDisableMove
+Failed to read: session.autoRaiseDelay
+Setting default value
+Setting default value
+Setting default value
+Failed to read: session.screen0.autoRaise
+Failed to read: session.screen0.opaqueMove
+Setting default value
+Failed to read: session.screen0.maxDisableResize
+Failed to read: session.screen0.workspacewarping
+Failed to read: session.screen0.fullMaximization
+Setting default value
+Failed to read: session.screen0.maxIgnoreIncrement
+Setting default value
+Setting default value
+Failed to read: session.screen0.allowRemoteActions
+Setting default value
+Failed to read: session.screen0.defaultDeco
+Setting default value
+Failed to read: session.screen0.tab.placement
+Setting default value
+Failed to read: session.screen0.windowMenu
+Setting default value
+Failed to read: session.screen0.noFocusWhileTypingDelay
+Setting default value
+Failed to read: session.screen0.workspaces
+Setting default value
+Failed to read: session.screen0.edgeSnapThreshold
+Setting default value
+Failed to read: session.screen0.window.focus.alpha
+Setting default value
+Failed to read: session.screen0.window.unfocus.alpha
+Setting default value
+Failed to read: session.screen0.menu.alpha
+Setting default value
+Failed to read: session.screen0.menuDelay
+Setting default value
+Failed to read: session.screen0.tab.width
+Setting default value
+Failed to read: session.screen0.tooltipDelay
+Setting default value
+Setting default value
+Setting default value
+Failed to read: session.screen0.colPlacementDirection
+Failed to read: session.screen0.tabFocusModel
+Failed to read: session.screen0.clientMenu.usePixmap
+Setting default value
+Setting default value
+Failed to read: session.screen0.focusNewWindows
+Setting default value
+Failed to read: session.screen0.windowPlacement
+Setting default value
+Setting default value
+Failed to read: session.screen0.tabs.usePixmap
+Failed to read: session.screen0.focusSameHead
+Setting default value
+Setting default value
+Failed to read: session.screen0.rowPlacementDirection
+Failed to read: session.screen0.tabs.maxOver
+Setting default value
+Failed to read: session.screen0.tabs.intitlebar
+Setting default value
+Failed to read: session.screen0.focusModel
+Setting default value
+Failed to read: session.screen0.slit.acceptKdeDockapps
+Setting default value
+Failed to read: session.screen0.slit.autoHide
+Setting default value
+Failed to read: session.screen0.slit.maxOver
+Setting default value
+Failed to read: session.screen0.slit.placement
+Setting default value
+Failed to read: session.screen0.slit.alpha
+Setting default value
+Failed to read: session.screen0.slit.onhead
+Setting default value
+Failed to read: session.screen0.slit.layer
+Setting default value
+/usr/bin/fbsetbg: 153: xmessage: not found
+2026-07-20 04:15:23,316 INFO reaped unknown pid 240 (exit status 127)
+Failed to read: session.screen0.toolbar.autoHide
+Setting default value
+Failed to read: session.screen0.toolbar.maxOver
+Setting default value
+Failed to read: session.screen0.toolbar.visible
+Setting default value
+Failed to read: session.screen0.toolbar.alpha
+Setting default value
+Failed to read: session.screen0.toolbar.layer
+Setting default value
+Failed to read: session.screen0.toolbar.onhead
+Setting default value
+Failed to read: session.screen0.toolbar.placement
+Setting default value
+Failed to read: session.screen0.toolbar.height
+Setting default value
+Failed to read: session.screen0.iconbar.mode
+Setting default value
+Failed to read: session.screen0.iconbar.alignment
+Setting default value
+Failed to read: session.screen0.iconbar.iconWidth
+Setting default value
+Failed to read: session.screen0.iconbar.iconTextPadding
+Setting default value
+Failed to read: session.screen0.iconbar.usePixmap
+Setting default value
+> Terminal ready on http://0.0.0.0:3002 (WS proxy /ws -> ws://127.0.0.1:8056/ws)
+INFO:     ('127.0.0.1', 37654) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     ('127.0.0.1', 37660) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20T04:15:24.720122144Z [DBUG]  ts="2026-07-20T04:15:24.714490Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="2bbf2bf5e2504997b021b2021470eb48" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.724368441Z [INFO]  ts="2026-07-20T04:15:24.721354Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="2bbf2bf5e2504997b021b2021470eb48" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T04:15:24.748351664Z [INFO]  ts="2026-07-20T04:15:24.744164Z" fields={"count":10} 
+service="transcription-collector" trace_id="d0c7d537a52e4f63a03cda99c87fc87c" audience="user" event="meetings_listed" 
+span="meetings.list" user_id=5
+INFO:     127.0.0.1:37922 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:24.748358954Z [DBUG]  ts="2026-07-20T04:15:24.746663Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/meetings","downstream_status":200} service="gateway" 
+trace_id="2bbf2bf5e2504997b021b2021470eb48" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:24.772469716Z [DBUG]  ts="2026-07-20T04:15:24.771448Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="94b4fda024884e619b6c8917cc73fa17" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.777854286Z [INFO]  ts="2026-07-20T04:15:24.777234Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="94b4fda024884e619b6c8917cc73fa17" audience="user" event="request_accepted" span="auth" 
+user_id=4
+2026-07-20T04:15:24.786617696Z [INFO]  ts="2026-07-20T04:15:24.785116Z" fields={"count":4} 
+service="transcription-collector" trace_id="cb7439c980164a6d8b6d5deab12a2bdd" audience="user" event="meetings_listed" 
+span="meetings.list" user_id=4
+INFO:     127.0.0.1:37922 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:24.787870488Z [DBUG]  ts="2026-07-20T04:15:24.787098Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/meetings","downstream_status":200} service="gateway" 
+trace_id="94b4fda024884e619b6c8917cc73fa17" audience="system" event="downstream_forwarded" span="proxy" user_id=4
+INFO:     127.0.0.1:37652 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:24.883697246Z [DBUG]  ts="2026-07-20T04:15:24.881159Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="088c50e56a16410384e101da5e288bf0" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.884220858Z [DBUG]  ts="2026-07-20T04:15:24.883259Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2","minted":true} service="gateway" 
+trace_id="f3c5a09f02e3424284ff3e37464f047b" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.889139825Z [DBUG]  ts="2026-07-20T04:15:24.888079Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1","minted":true} service="gateway" 
+trace_id="a1a85360e270425bb7c853a586f3c129" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.889931193Z [INFO]  ts="2026-07-20T04:15:24.889246Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="088c50e56a16410384e101da5e288bf0" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:24.890666722Z [DBUG]  ts="2026-07-20T04:15:24.890063Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5","minted":true} service="gateway" 
+trace_id="dca4cf9282e24fd6a0a94303acd3a03a" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.890669272Z [DBUG]  ts="2026-07-20T04:15:24.890161Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3","minted":true} service="gateway" 
+trace_id="10213604f93049ee975443c3ae8d14b7" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.893352032Z [INFO]  ts="2026-07-20T04:15:24.892234Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2"} service="gateway" trace_id="f3c5a09f02e3424284ff3e37464f047b" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:24.893354752Z [DBUG]  ts="2026-07-20T04:15:24.892419Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4","minted":true} service="gateway" 
+trace_id="525d09a5197940a3a4b339a318a709c7" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.893989073Z [DBUG]  ts="2026-07-20T04:15:24.893558Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6","minted":true} service="gateway" 
+trace_id="1117158a526544718eeaac1ee84b9e9b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36952 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:24.901035758Z [DBUG]  ts="2026-07-20T04:15:24.899824Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="088c50e56a16410384e101da5e288bf0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:24.901039278Z [DBUG]  ts="2026-07-20T04:15:24.899955Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7","minted":true} service="gateway" 
+trace_id="a66f689043f647bb8e6fefa09e52eeb2" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37650 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:24.902476957Z [DBUG]  ts="2026-07-20T04:15:24.901542Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10","minted":true} service="gateway" 
+trace_id="bb823dc0b9cf47b59b12d34f01f61be0" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.902481017Z [DBUG]  ts="2026-07-20T04:15:24.902016Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8","minted":true} service="gateway" 
+trace_id="6e0aa18551b645b7b0ed811df0ea74c9" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.907408294Z [INFO]  ts="2026-07-20T04:15:24.903566Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1"} service="gateway" trace_id="a1a85360e270425bb7c853a586f3c129" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:24.907411524Z [DBUG]  ts="2026-07-20T04:15:24.904331Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9","minted":true} service="gateway" 
+trace_id="5c6fd1b0feee460bbffd14334361ed30" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:24.911416794Z [INFO]  ts="2026-07-20T04:15:24.910900Z" fields={"segments":0} 
+service="transcription-collector" trace_id="35a0038ffa984e82a9002ae8feaf1db6" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="2"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+2026-07-20T04:15:24.916130434Z [DBUG]  ts="2026-07-20T04:15:24.913584Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/2","downstream_status":200} service="gateway" 
+trace_id="f3c5a09f02e3424284ff3e37464f047b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37652 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+2026-07-20T04:15:24.916137004Z [INFO]  ts="2026-07-20T04:15:24.915419Z" fields={"segments":0} 
+service="transcription-collector" trace_id="78bf20ddc8d445c095fbad388c050c7f" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="1"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+2026-07-20T04:15:24.917046010Z [DBUG]  ts="2026-07-20T04:15:24.916321Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/1","downstream_status":200} service="gateway" 
+trace_id="a1a85360e270425bb7c853a586f3c129" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37674 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 37748) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20T04:15:24.956836610Z [INFO]  ts="2026-07-20T04:15:24.955528Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7"} service="gateway" trace_id="a66f689043f647bb8e6fefa09e52eeb2" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:24.965808257Z [INFO]  ts="2026-07-20T04:15:24.963820Z" fields={"segments":0} 
+service="transcription-collector" trace_id="f0a9c197307f44afac76f7570a8a9752" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="7"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T04:15:24.965816176Z [DBUG]  ts="2026-07-20T04:15:24.964733Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/7","downstream_status":200} service="gateway" 
+trace_id="a66f689043f647bb8e6fefa09e52eeb2" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37722 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T04:15:24.970449317Z [INFO]  ts="2026-07-20T04:15:24.969773Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10"} service="gateway" trace_id="bb823dc0b9cf47b59b12d34f01f61be0" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:24.979883028Z [INFO]  ts="2026-07-20T04:15:24.977684Z" fields={"segments":18} 
+service="transcription-collector" trace_id="3184430e0dad4788b2f491b5753712b2" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="10"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T04:15:24.979889038Z [DBUG]  ts="2026-07-20T04:15:24.978680Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/10","downstream_status":200} service="gateway" 
+trace_id="bb823dc0b9cf47b59b12d34f01f61be0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37728 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.004628711Z [INFO]  ts="2026-07-20T04:15:25.000627Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4"} service="gateway" trace_id="525d09a5197940a3a4b339a318a709c7" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:25.004637461Z [INFO]  ts="2026-07-20T04:15:25.002161Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5"} service="gateway" trace_id="dca4cf9282e24fd6a0a94303acd3a03a" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:25.004642781Z [INFO]  ts="2026-07-20T04:15:25.004181Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6"} service="gateway" trace_id="1117158a526544718eeaac1ee84b9e9b" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:25.008065329Z [INFO]  ts="2026-07-20T04:15:25.007272Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3"} service="gateway" trace_id="10213604f93049ee975443c3ae8d14b7" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:25.015242433Z [INFO]  ts="2026-07-20T04:15:25.010435Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9"} service="gateway" trace_id="5c6fd1b0feee460bbffd14334361ed30" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:25.015259173Z [INFO]  ts="2026-07-20T04:15:25.012001Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8"} service="gateway" trace_id="6e0aa18551b645b7b0ed811df0ea74c9" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:25.067587496Z [INFO]  ts="2026-07-20T04:15:25.062135Z" fields={"segments":0} 
+service="transcription-collector" trace_id="338402b582ab45b98d050712429abb30" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="5"
+2026-07-20T04:15:25.067591016Z [INFO]  ts="2026-07-20T04:15:25.062292Z" fields={"segments":0} 
+service="transcription-collector" trace_id="b49c90de58db42ea9d353e0c19a8039e" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="4"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.067601865Z [DBUG]  ts="2026-07-20T04:15:25.064126Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/5","downstream_status":200} service="gateway" 
+trace_id="dca4cf9282e24fd6a0a94303acd3a03a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:25.067604805Z [DBUG]  ts="2026-07-20T04:15:25.064324Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/4","downstream_status":200} service="gateway" 
+trace_id="525d09a5197940a3a4b339a318a709c7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37676 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37688 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.071712524Z [INFO]  ts="2026-07-20T04:15:25.070856Z" fields={"segments":0} 
+service="transcription-collector" trace_id="ecddabab93c5452699b72c2a285fd407" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="3"
+2026-07-20T04:15:25.071717814Z [INFO]  ts="2026-07-20T04:15:25.070979Z" fields={"segments":0} 
+service="transcription-collector" trace_id="f7ec95ed1eab49d59b32e9a3663abc67" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="6"
+INFO:     127.0.0.1:37948 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37942 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.072457634Z [DBUG]  ts="2026-07-20T04:15:25.072166Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/3","downstream_status":200} service="gateway" 
+trace_id="10213604f93049ee975443c3ae8d14b7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:25.073431259Z [DBUG]  ts="2026-07-20T04:15:25.072369Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/6","downstream_status":200} service="gateway" 
+trace_id="1117158a526544718eeaac1ee84b9e9b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37682 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37702 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.078089570Z [INFO]  ts="2026-07-20T04:15:25.075012Z" fields={"segments":31} 
+service="transcription-collector" trace_id="e7bf17390901412b86cbdc676c8949fc" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="9"
+INFO:     127.0.0.1:37950 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.078095720Z [INFO]  ts="2026-07-20T04:15:25.075738Z" fields={"segments":0} 
+service="transcription-collector" trace_id="df2c4000dc1f4825843a38e28ceadf51" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="8"
+INFO:     127.0.0.1:37958 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.078100849Z [DBUG]  ts="2026-07-20T04:15:25.076013Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/9","downstream_status":200} service="gateway" 
+trace_id="5c6fd1b0feee460bbffd14334361ed30" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37740 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+2026-07-20T04:15:25.078106789Z [DBUG]  ts="2026-07-20T04:15:25.076553Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/8","downstream_status":200} service="gateway" 
+trace_id="6e0aa18551b645b7b0ed811df0ea74c9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37730 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 37758) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20 04:15:26,312 INFO spawned: 'x11vnc' with pid 270
+Xlib:  extension "DPMS" missing on display ":99".
+20/07/2026 04:15:26 *** unrecognized option(s) ***
+20/07/2026 04:15:26 	[1]  -127.0.0.1
+20/07/2026 04:15:26 For a list of options run: x11vnc -opts
+20/07/2026 04:15:26 or for the full help: x11vnc -help
+20/07/2026 04:15:26 
+20/07/2026 04:15:26 Here is a list of removed or obsolete options:
+20/07/2026 04:15:26 
+20/07/2026 04:15:26 removed: -hints, -nohints
+20/07/2026 04:15:26 removed: -cursorposall
+20/07/2026 04:15:26 removed: -nofilexfer, now the default.
+20/07/2026 04:15:26 
+20/07/2026 04:15:26 renamed: -old_copytile, use -onetile
+20/07/2026 04:15:26 renamed: -mouse,   use -cursor
+20/07/2026 04:15:26 renamed: -mouseX,  use -cursor X
+20/07/2026 04:15:26 renamed: -X,       use -cursor X
+20/07/2026 04:15:26 renamed: -nomouse, use -nocursor
+20/07/2026 04:15:26 renamed: -old_pointer, use -pointer_mode 1
+2026-07-20 04:15:26,345 INFO exited: x11vnc (exit status 1; not expected)
+2026-07-20T04:15:26.801836852Z [DBUG]  ts="2026-07-20T04:15:26.797544Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="4342dba19e3940d78636daf3e4f44883" 
+audience="system" event="request_received" span="edge"
+2026-07-20 04:15:26,797 INFO gave up: x11vnc entered FATAL state, too many start retries too quickly
+2026-07-20T04:15:26.806363424Z [INFO]  ts="2026-07-20T04:15:26.805236Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="4342dba19e3940d78636daf3e4f44883" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T04:15:26.816486274Z [INFO]  ts="2026-07-20T04:15:26.810709Z" fields={"count":10} 
+service="transcription-collector" trace_id="cfd375e7888247bf97b91077a425819d" audience="user" event="meetings_listed" 
+span="meetings.list" user_id=5
+INFO:     127.0.0.1:37922 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:26.816492154Z [DBUG]  ts="2026-07-20T04:15:26.811781Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/meetings","downstream_status":200} service="gateway" 
+trace_id="4342dba19e3940d78636daf3e4f44883" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:26.918931264Z [DBUG]  ts="2026-07-20T04:15:26.914575Z" 
+fields={"method":"GET","path":"/transcripts/by-id/19","minted":true} service="gateway" 
+trace_id="6bfec84d7fa245298c904cd4552830f6" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:26.918935374Z [DBUG]  ts="2026-07-20T04:15:26.915925Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="e0dc58bc95fe41eea7ba0e966a0c976c" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:26.918939064Z [DBUG]  ts="2026-07-20T04:15:26.917493Z" 
+fields={"method":"GET","path":"/transcripts/by-id/14","minted":true} service="gateway" 
+trace_id="282846d492fa455293bdceafd821c17d" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:26.919392327Z [DBUG]  ts="2026-07-20T04:15:26.918678Z" 
+fields={"method":"GET","path":"/transcripts/by-id/15","minted":true} service="gateway" 
+trace_id="7b4c6205ea2a43e79d0b18503e4039f1" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:26.921114332Z [DBUG]  ts="2026-07-20T04:15:26.919731Z" 
+fields={"method":"GET","path":"/transcripts/by-id/20","minted":true} service="gateway" 
+trace_id="bf354df830ed467bbced61074bf1d2c5" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:26.926017438Z [INFO]  ts="2026-07-20T04:15:26.924560Z" 
+fields={"method":"GET","path":"/transcripts/by-id/19"} service="gateway" trace_id="6bfec84d7fa245298c904cd4552830f6" 
+audience="user" event="request_accepted" span="auth" user_id=4
+2026-07-20T04:15:26.926726138Z [INFO]  ts="2026-07-20T04:15:26.925750Z" 
+fields={"method":"GET","path":"/transcripts/by-id/15"} service="gateway" trace_id="7b4c6205ea2a43e79d0b18503e4039f1" 
+audience="user" event="request_accepted" span="auth" user_id=4
+2026-07-20T04:15:26.928170537Z [INFO]  ts="2026-07-20T04:15:26.927368Z" 
+fields={"method":"GET","path":"/transcripts/by-id/20"} service="gateway" trace_id="bf354df830ed467bbced61074bf1d2c5" 
+audience="user" event="request_accepted" span="auth" user_id=4
+2026-07-20T04:15:26.929763053Z [INFO]  ts="2026-07-20T04:15:26.929106Z" 
+fields={"method":"GET","path":"/transcripts/by-id/14"} service="gateway" trace_id="282846d492fa455293bdceafd821c17d" 
+audience="user" event="request_accepted" span="auth" user_id=4
+2026-07-20T04:15:26.934799828Z [INFO]  ts="2026-07-20T04:15:26.930707Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="e0dc58bc95fe41eea7ba0e966a0c976c" 
+audience="user" event="request_accepted" span="auth" user_id=4
+INFO:     127.0.0.1:36952 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:26.935369320Z [DBUG]  ts="2026-07-20T04:15:26.934519Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="e0dc58bc95fe41eea7ba0e966a0c976c" audience="system" event="downstream_forwarded" span="proxy" user_id=4
+INFO:     127.0.0.1:37652 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:26.937244052Z [INFO]  ts="2026-07-20T04:15:26.935713Z" fields={"segments":4} 
+service="transcription-collector" trace_id="55b6ab62473f4be3853af55e583f96d2" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=4 meeting_id="19"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/19 HTTP/1.1" 200 OK
+2026-07-20T04:15:26.937254012Z [DBUG]  ts="2026-07-20T04:15:26.936649Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/19","downstream_status":200} service="gateway" 
+trace_id="6bfec84d7fa245298c904cd4552830f6" audience="system" event="downstream_forwarded" span="proxy" user_id=4
+INFO:     127.0.0.1:37650 - "GET /transcripts/by-id/19 HTTP/1.1" 200 OK
+2026-07-20T04:15:26.941869584Z [INFO]  ts="2026-07-20T04:15:26.938261Z" fields={"segments":8} 
+service="transcription-collector" trace_id="2971398b3d724661a842ec71c274ead5" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=4 meeting_id="14"
+2026-07-20T04:15:26.941875104Z [INFO]  ts="2026-07-20T04:15:26.938368Z" fields={"segments":313} 
+service="transcription-collector" trace_id="2ba5b6c82bb04afca77bb971e13144fb" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=4 meeting_id="15"
+2026-07-20T04:15:26.941880744Z [INFO]  ts="2026-07-20T04:15:26.939313Z" fields={"segments":0} 
+service="transcription-collector" trace_id="c054d1f19c894481a494af29fcebb26a" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=4 meeting_id="20"
+INFO:     127.0.0.1:37948 - "GET /transcripts/by-id/14 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37942 - "GET /transcripts/by-id/20 HTTP/1.1" 200 OK
+2026-07-20T04:15:26.941894573Z [DBUG]  ts="2026-07-20T04:15:26.940517Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/14","downstream_status":200} service="gateway" 
+trace_id="282846d492fa455293bdceafd821c17d" audience="system" event="downstream_forwarded" span="proxy" user_id=4
+2026-07-20T04:15:26.941897493Z [DBUG]  ts="2026-07-20T04:15:26.940685Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/20","downstream_status":200} service="gateway" 
+trace_id="bf354df830ed467bbced61074bf1d2c5" audience="system" event="downstream_forwarded" span="proxy" user_id=4
+INFO:     127.0.0.1:37674 - "GET /transcripts/by-id/14 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37682 - "GET /transcripts/by-id/20 HTTP/1.1" 200 OK
+2026-07-20T04:15:26.953382642Z [DBUG]  ts="2026-07-20T04:15:26.947792Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/15","downstream_status":200} service="gateway" 
+trace_id="7b4c6205ea2a43e79d0b18503e4039f1" audience="system" event="downstream_forwarded" span="proxy" user_id=4
+INFO:     127.0.0.1:37676 - "GET /transcripts/by-id/15 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.033905997Z [DBUG]  ts="2026-07-20T04:15:27.028460Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="9f9261d2e7944bfc87e1664f15d6219d" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.038530339Z [INFO]  ts="2026-07-20T04:15:27.035271Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="9f9261d2e7944bfc87e1664f15d6219d" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T04:15:27.043155901Z [INFO]  ts="2026-07-20T04:15:27.041068Z" fields={"count":10} 
+service="transcription-collector" trace_id="5755fab50d7845b29109b706fbcb95fd" audience="user" event="meetings_listed" 
+span="meetings.list" user_id=5
+INFO:     127.0.0.1:37922 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:27.043163960Z [DBUG]  ts="2026-07-20T04:15:27.042011Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/meetings","downstream_status":200} service="gateway" 
+trace_id="9f9261d2e7944bfc87e1664f15d6219d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T04:15:27.049441446Z [DBUG]  ts="2026-07-20T04:15:27.048043Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="3d19221d7d014465ad0ebf72ed938e57" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.050765977Z [DBUG]  ts="2026-07-20T04:15:27.050192Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1","minted":true} service="gateway" 
+trace_id="c7751579199f414b8602b60a736fa13c" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.056407024Z [INFO]  ts="2026-07-20T04:15:27.054484Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="3d19221d7d014465ad0ebf72ed938e57" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.056413643Z [DBUG]  ts="2026-07-20T04:15:27.055840Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2","minted":true} service="gateway" 
+trace_id="57d7f3fb993b4893875c88acd46f6772" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.057936731Z [INFO]  ts="2026-07-20T04:15:27.056716Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1"} service="gateway" trace_id="c7751579199f414b8602b60a736fa13c" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.063804063Z [DBUG]  ts="2026-07-20T04:15:27.059211Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3","minted":true} service="gateway" 
+trace_id="c3afa4ba77314454bd03c9497feb9504" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36952 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:27.063812063Z [DBUG]  ts="2026-07-20T04:15:27.060215Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="3d19221d7d014465ad0ebf72ed938e57" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:27.063819803Z [DBUG]  ts="2026-07-20T04:15:27.060594Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4","minted":true} service="gateway" 
+trace_id="949ce0864f114da1bc922ec68d0fd503" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.063826223Z [INFO]  ts="2026-07-20T04:15:27.062874Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2"} service="gateway" trace_id="57d7f3fb993b4893875c88acd46f6772" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.066033720Z [INFO]  ts="2026-07-20T04:15:27.064961Z" fields={"segments":0} 
+service="transcription-collector" trace_id="d7b7356c7dc942ddaf74913a2787b575" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="1"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.066041840Z [INFO]  ts="2026-07-20T04:15:27.065454Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3"} service="gateway" trace_id="c3afa4ba77314454bd03c9497feb9504" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.066045570Z [DBUG]  ts="2026-07-20T04:15:27.065600Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5","minted":true} service="gateway" 
+trace_id="97b87644a4284682a0f8f8d7fd08a2a4" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.071100425Z [DBUG]  ts="2026-07-20T04:15:27.066431Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/1","downstream_status":200} service="gateway" 
+trace_id="c7751579199f414b8602b60a736fa13c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37652 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.071110775Z [DBUG]  ts="2026-07-20T04:15:27.067255Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6","minted":true} service="gateway" 
+trace_id="d801d7c6da5445ddb33e54c9f0b28942" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.071115525Z [INFO]  ts="2026-07-20T04:15:27.068201Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4"} service="gateway" trace_id="949ce0864f114da1bc922ec68d0fd503" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.071118335Z [INFO]  ts="2026-07-20T04:15:27.069339Z" fields={"segments":0} 
+service="transcription-collector" trace_id="3ecc1a8c20944c0eaee93b59d5979a03" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="2"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.071124925Z [DBUG]  ts="2026-07-20T04:15:27.070592Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/2","downstream_status":200} service="gateway" 
+trace_id="57d7f3fb993b4893875c88acd46f6772" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37674 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.073132525Z [INFO]  ts="2026-07-20T04:15:27.071824Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5"} service="gateway" trace_id="97b87644a4284682a0f8f8d7fd08a2a4" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.074290637Z [INFO]  ts="2026-07-20T04:15:27.073643Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6"} service="gateway" trace_id="d801d7c6da5445ddb33e54c9f0b28942" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.079244034Z [INFO]  ts="2026-07-20T04:15:27.075986Z" fields={"segments":0} 
+service="transcription-collector" trace_id="a89d8e314ecf4643a10f4bbd8b7ad441" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="3"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.079255794Z [INFO]  ts="2026-07-20T04:15:27.077866Z" fields={"segments":0} 
+service="transcription-collector" trace_id="694496a0127e41eda3f4d01b01cfc2ac" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="4"
+2026-07-20T04:15:27.079259844Z [DBUG]  ts="2026-07-20T04:15:27.077964Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/3","downstream_status":200} service="gateway" 
+trace_id="c3afa4ba77314454bd03c9497feb9504" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37942 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37676 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.079271844Z [DBUG]  ts="2026-07-20T04:15:27.078621Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/4","downstream_status":200} service="gateway" 
+trace_id="949ce0864f114da1bc922ec68d0fd503" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37682 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.086257380Z [INFO]  ts="2026-07-20T04:15:27.082530Z" fields={"segments":0} 
+service="transcription-collector" trace_id="ab877c435937456dafe7ade924e55a92" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="5"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.086270610Z [DBUG]  ts="2026-07-20T04:15:27.083232Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/5","downstream_status":200} service="gateway" 
+trace_id="97b87644a4284682a0f8f8d7fd08a2a4" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37688 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.086278610Z [INFO]  ts="2026-07-20T04:15:27.084237Z" fields={"segments":0} 
+service="transcription-collector" trace_id="452f6b7fd2eb48c69e4c6081c16f403e" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="6"
+INFO:     127.0.0.1:37948 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.086285200Z [DBUG]  ts="2026-07-20T04:15:27.084809Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/6","downstream_status":200} service="gateway" 
+trace_id="d801d7c6da5445ddb33e54c9f0b28942" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.116427002Z [DBUG]  ts="2026-07-20T04:15:27.111408Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7","minted":true} service="gateway" 
+trace_id="c7224b401a664321871bc7d0f41a7103" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.121682284Z [INFO]  ts="2026-07-20T04:15:27.117921Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7"} service="gateway" trace_id="c7224b401a664321871bc7d0f41a7103" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.128094639Z [INFO]  ts="2026-07-20T04:15:27.126080Z" fields={"segments":0} 
+service="transcription-collector" trace_id="3c74eeff6d354284ac1b4558735c9c37" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="7"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.128107809Z [DBUG]  ts="2026-07-20T04:15:27.127023Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/7","downstream_status":200} service="gateway" 
+trace_id="c7224b401a664321871bc7d0f41a7103" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.173684243Z [DBUG]  ts="2026-07-20T04:15:27.172509Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8","minted":true} service="gateway" 
+trace_id="4dcec9faccb649768dcdad3875f0a276" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.175855791Z [DBUG]  ts="2026-07-20T04:15:27.173913Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9","minted":true} service="gateway" 
+trace_id="94cc351d9b914205bcd876582ae24740" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.181451307Z [DBUG]  ts="2026-07-20T04:15:27.177818Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10","minted":true} service="gateway" 
+trace_id="2e4a80dc831842caba6898d9da933ecd" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.184671549Z [INFO]  ts="2026-07-20T04:15:27.183113Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8"} service="gateway" trace_id="4dcec9faccb649768dcdad3875f0a276" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.186454763Z [INFO]  ts="2026-07-20T04:15:27.185529Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9"} service="gateway" trace_id="94cc351d9b914205bcd876582ae24740" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.191196962Z [INFO]  ts="2026-07-20T04:15:27.190549Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10"} service="gateway" trace_id="2e4a80dc831842caba6898d9da933ecd" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.192684231Z [INFO]  ts="2026-07-20T04:15:27.191819Z" fields={"segments":0} 
+service="transcription-collector" trace_id="82562e598d18466c984c1e4d1fc6d614" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="8"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.193803393Z [DBUG]  ts="2026-07-20T04:15:27.192629Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/8","downstream_status":200} service="gateway" 
+trace_id="4dcec9faccb649768dcdad3875f0a276" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.193809533Z [INFO]  ts="2026-07-20T04:15:27.192752Z" fields={"segments":31} 
+service="transcription-collector" trace_id="338fce71e2da4b398720f181dbebcc0d" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="9"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.194395155Z [DBUG]  ts="2026-07-20T04:15:27.193541Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/9","downstream_status":200} service="gateway" 
+trace_id="94cc351d9b914205bcd876582ae24740" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37652 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.199253473Z [INFO]  ts="2026-07-20T04:15:27.197062Z" fields={"segments":18} 
+service="transcription-collector" trace_id="3447037bdc934895ac8757ccbafd84ba" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="10"
+INFO:     127.0.0.1:37942 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.199260383Z [DBUG]  ts="2026-07-20T04:15:27.197712Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/10","downstream_status":200} service="gateway" 
+trace_id="2e4a80dc831842caba6898d9da933ecd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37674 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.266934488Z [DBUG]  ts="2026-07-20T04:15:27.262749Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="4c4ed523317e4865a7222be60f6dc82d" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.266937458Z [DBUG]  ts="2026-07-20T04:15:27.264198Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1","minted":true} service="gateway" 
+trace_id="a1e05318861c4622be036f1014b33ad4" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.266939978Z [DBUG]  ts="2026-07-20T04:15:27.265576Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2","minted":true} service="gateway" 
+trace_id="0a3bb305966247f890693720d6ca9266" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.269493240Z [DBUG]  ts="2026-07-20T04:15:27.266656Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3","minted":true} service="gateway" 
+trace_id="b43e8e4bbfa548c6bc3aaf92f957230a" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.273127326Z [INFO]  ts="2026-07-20T04:15:27.270969Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="4c4ed523317e4865a7222be60f6dc82d" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.273131036Z [DBUG]  ts="2026-07-20T04:15:27.271616Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4","minted":true} service="gateway" 
+trace_id="338415b1aee24b3caa0a55b39dcb0e4c" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.273598959Z [INFO]  ts="2026-07-20T04:15:27.272683Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1"} service="gateway" trace_id="a1e05318861c4622be036f1014b33ad4" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.276971089Z [INFO]  ts="2026-07-20T04:15:27.274895Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2"} service="gateway" trace_id="0a3bb305966247f890693720d6ca9266" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36952 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:27.278724594Z [DBUG]  ts="2026-07-20T04:15:27.278334Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="4c4ed523317e4865a7222be60f6dc82d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:27.283905917Z [INFO]  ts="2026-07-20T04:15:27.279610Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3"} service="gateway" trace_id="b43e8e4bbfa548c6bc3aaf92f957230a" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.283908707Z [INFO]  ts="2026-07-20T04:15:27.280737Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4"} service="gateway" trace_id="338415b1aee24b3caa0a55b39dcb0e4c" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.283911417Z [INFO]  ts="2026-07-20T04:15:27.281622Z" fields={"segments":0} 
+service="transcription-collector" trace_id="a462b3757734499ab4f9967fbdba9bdc" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="1"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.283916697Z [INFO]  ts="2026-07-20T04:15:27.282261Z" fields={"segments":0} 
+service="transcription-collector" trace_id="7d09ad5c36c04029bf593f2db3ec1395" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="2"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37650 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T04:15:27.284653045Z [DBUG]  ts="2026-07-20T04:15:27.284084Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/1","downstream_status":200} service="gateway" 
+trace_id="a1e05318861c4622be036f1014b33ad4" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:27.289204178Z [DBUG]  ts="2026-07-20T04:15:27.286195Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/2","downstream_status":200} service="gateway" 
+trace_id="0a3bb305966247f890693720d6ca9266" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37652 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37674 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.300649708Z [INFO]  ts="2026-07-20T04:15:27.297059Z" fields={"segments":0} 
+service="transcription-collector" trace_id="bd6ccb3c4803427eb472f1c3ff081b9d" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="4"
+2026-07-20T04:15:27.300658018Z [INFO]  ts="2026-07-20T04:15:27.297173Z" fields={"segments":0} 
+service="transcription-collector" trace_id="84485918f12d44479863996c407e716e" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="3"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.300671908Z [DBUG]  ts="2026-07-20T04:15:27.298748Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/4","downstream_status":200} service="gateway" 
+trace_id="338415b1aee24b3caa0a55b39dcb0e4c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:27.300676098Z [DBUG]  ts="2026-07-20T04:15:27.298975Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/3","downstream_status":200} service="gateway" 
+trace_id="b43e8e4bbfa548c6bc3aaf92f957230a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37682 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37676 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.379033474Z [DBUG]  ts="2026-07-20T04:15:27.375442Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5","minted":true} service="gateway" 
+trace_id="45ce4861f7f9436cb38a64879dcbe34d" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.385239062Z [INFO]  ts="2026-07-20T04:15:27.382646Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5"} service="gateway" trace_id="45ce4861f7f9436cb38a64879dcbe34d" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.391565328Z [INFO]  ts="2026-07-20T04:15:27.389659Z" fields={"segments":0} 
+service="transcription-collector" trace_id="b2e3728db6264c809357e51c4c07bd47" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="5"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.391578688Z [DBUG]  ts="2026-07-20T04:15:27.390413Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/5","downstream_status":200} service="gateway" 
+trace_id="45ce4861f7f9436cb38a64879dcbe34d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.396373206Z [DBUG]  ts="2026-07-20T04:15:27.395343Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6","minted":true} service="gateway" 
+trace_id="212b6e76dd5a45fea3d66db594214cfa" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.398044771Z [DBUG]  ts="2026-07-20T04:15:27.396835Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7","minted":true} service="gateway" 
+trace_id="f758802b6d56444888e7fc349f1a4b0b" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.402576235Z [DBUG]  ts="2026-07-20T04:15:27.398279Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8","minted":true} service="gateway" 
+trace_id="c027d82827cf49e58117b133b0e90f72" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.402579504Z [DBUG]  ts="2026-07-20T04:15:27.399574Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9","minted":true} service="gateway" 
+trace_id="9d413a9a06624ef0a9a59a196ae2e5bd" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.402582914Z [DBUG]  ts="2026-07-20T04:15:27.400771Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10","minted":true} service="gateway" 
+trace_id="e6895734f5d945ea804d85294d9fb736" audience="system" event="request_received" span="edge"
+2026-07-20T04:15:27.405355433Z [INFO]  ts="2026-07-20T04:15:27.403206Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6"} service="gateway" trace_id="212b6e76dd5a45fea3d66db594214cfa" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.405367273Z [INFO]  ts="2026-07-20T04:15:27.404694Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7"} service="gateway" trace_id="f758802b6d56444888e7fc349f1a4b0b" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.410649154Z [INFO]  ts="2026-07-20T04:15:27.406370Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8"} service="gateway" trace_id="c027d82827cf49e58117b133b0e90f72" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.410655624Z [INFO]  ts="2026-07-20T04:15:27.408211Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10"} service="gateway" trace_id="e6895734f5d945ea804d85294d9fb736" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.410661184Z [INFO]  ts="2026-07-20T04:15:27.409471Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9"} service="gateway" trace_id="9d413a9a06624ef0a9a59a196ae2e5bd" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:15:27.415472523Z [INFO]  ts="2026-07-20T04:15:27.411434Z" fields={"segments":0} 
+service="transcription-collector" trace_id="2b13ed4875c74d1284bef707358b4d3e" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="6"
+INFO:     127.0.0.1:37922 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.415479633Z [INFO]  ts="2026-07-20T04:15:27.411728Z" fields={"segments":0} 
+service="transcription-collector" trace_id="c417669338e14fe8b953b1eb182e5803" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="7"
+INFO:     127.0.0.1:37930 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.415485523Z [DBUG]  ts="2026-07-20T04:15:27.412343Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/6","downstream_status":200} service="gateway" 
+trace_id="212b6e76dd5a45fea3d66db594214cfa" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:15:27.415489383Z [DBUG]  ts="2026-07-20T04:15:27.412749Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/7","downstream_status":200} service="gateway" 
+trace_id="f758802b6d56444888e7fc349f1a4b0b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37650 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37652 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.415499303Z [INFO]  ts="2026-07-20T04:15:27.413332Z" fields={"segments":0} 
+service="transcription-collector" trace_id="b66186c83b984c31a8af2cc0485730c1" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="8"
+INFO:     127.0.0.1:37942 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.416617736Z [DBUG]  ts="2026-07-20T04:15:27.414424Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/8","downstream_status":200} service="gateway" 
+trace_id="c027d82827cf49e58117b133b0e90f72" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37674 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.416624086Z [INFO]  ts="2026-07-20T04:15:27.415126Z" fields={"segments":18} 
+service="transcription-collector" trace_id="abb924752e9a4e35a4c2148c3981c1aa" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="10"
+INFO:     127.0.0.1:37948 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.416629396Z [INFO]  ts="2026-07-20T04:15:27.415463Z" fields={"segments":31} 
+service="transcription-collector" trace_id="a5dd2bd4fe734ec9b87e2d20d1ee6713" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="9"
+INFO:     127.0.0.1:37950 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.416635716Z [DBUG]  ts="2026-07-20T04:15:27.415968Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/10","downstream_status":200} service="gateway" 
+trace_id="e6895734f5d945ea804d85294d9fb736" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37682 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T04:15:27.421770460Z [DBUG]  ts="2026-07-20T04:15:27.416628Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/9","downstream_status":200} service="gateway" 
+trace_id="9d413a9a06624ef0a9a59a196ae2e5bd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37676 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+2026-07-20 04:15:28,417 INFO success: admin-api entered RUNNING state, process has stayed up for > than 10 seconds 
+(startsecs)
+2026-07-20 04:15:28,418 INFO success: runtime entered RUNNING state, process has stayed up for > than 10 seconds 
+(startsecs)
+2026-07-20 04:15:28,418 INFO success: agent-api entered RUNNING state, process has stayed up for > than 10 seconds 
+(startsecs)
+2026-07-20 04:15:28,418 INFO success: meeting-api entered RUNNING state, process has stayed up for > than 10 seconds 
+(startsecs)
+2026-07-20 04:15:28,418 INFO success: gateway entered RUNNING state, process has stayed up for > than 10 seconds 
+(startsecs)
+2026-07-20 04:15:28,418 INFO success: terminal entered RUNNING state, process has stayed up for > than 5 seconds 
+(startsecs)
+[provision-key] self-host key provisioned; dashboard + terminal restarted (zero-login)
+2026-07-20 04:15:29,420 INFO reaped unknown pid 5 (exit status 0)
+
+

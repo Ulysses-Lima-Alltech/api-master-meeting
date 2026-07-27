@@ -1,0 +1,698 @@
+﻿
+INFO:     connection closed
+2026-07-20T03:59:24.049044935Z [DBUG]  ts="2026-07-20T03:59:24.043704Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="986500d8c4994ae7a59ff77ff2722e75" 
+audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.053587622Z [INFO]  ts="2026-07-20T03:59:24.051846Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="986500d8c4994ae7a59ff77ff2722e75" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T03:59:24.063984158Z [INFO]  ts="2026-07-20T03:59:24.061959Z" fields={"count":10} 
+service="transcription-collector" trace_id="ccc0fb6b2da24e0aa6ecae5ce314d75a" audience="user" event="meetings_listed" 
+span="meetings.list" user_id=5
+INFO:     127.0.0.1:37694 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T03:59:24.063991358Z [DBUG]  ts="2026-07-20T03:59:24.063023Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/meetings","downstream_status":200} service="gateway" 
+trace_id="986500d8c4994ae7a59ff77ff2722e75" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36218 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T03:59:24.121233233Z [DBUG]  ts="2026-07-20T03:59:24.113633Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="ec6b0d8c18994fa8acb129838e8e3537" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.121247303Z [INFO]  ts="2026-07-20T03:59:24.120684Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="ec6b0d8c18994fa8acb129838e8e3537" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37116 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.126307297Z [DBUG]  ts="2026-07-20T03:59:24.125480Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="ec6b0d8c18994fa8acb129838e8e3537" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36218 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.147812685Z [DBUG]  ts="2026-07-20T03:59:24.147100Z" 
+fields={"method":"GET","path":"/agent/sessions","minted":true} service="gateway" 
+trace_id="a4222b61da9a4fa9b82b4a28bd787ce0" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.157142148Z [INFO]  ts="2026-07-20T03:59:24.153509Z" 
+fields={"method":"GET","path":"/agent/sessions"} service="gateway" trace_id="a4222b61da9a4fa9b82b4a28bd787ce0" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.157144848Z [DBUG]  ts="2026-07-20T03:59:24.153758Z" 
+fields={"method":"GET","path":"/agent/sessions/chat-mrson3ij/history","minted":true} service="gateway" 
+trace_id="dd264c0c6f8e4baca6f1cb50a84bdd4a" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.161984444Z [INFO]  ts="2026-07-20T03:59:24.158832Z" 
+fields={"method":"GET","path":"/agent/sessions/chat-mrson3ij/history"} service="gateway" 
+trace_id="dd264c0c6f8e4baca6f1cb50a84bdd4a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/sessions/chat-mrson3ij/history HTTP/1.1" 200 OK
+2026-07-20T03:59:24.164492887Z [DBUG]  ts="2026-07-20T03:59:24.163317Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/sessions/chat-mrson3ij/history","downstream_status":200} 
+service="gateway" trace_id="dd264c0c6f8e4baca6f1cb50a84bdd4a" audience="system" event="downstream_forwarded" 
+span="proxy" user_id=5
+INFO:     127.0.0.1:36224 - "GET /agent/sessions/chat-mrson3ij/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34344 - "GET /api/sessions HTTP/1.1" 200 OK
+2026-07-20T03:59:24.169991047Z [DBUG]  ts="2026-07-20T03:59:24.169173Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/sessions","downstream_status":200} service="gateway" 
+trace_id="a4222b61da9a4fa9b82b4a28bd787ce0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36218 - "GET /agent/sessions HTTP/1.1" 200 OK
+2026-07-20T03:59:24.243197978Z [DBUG]  ts="2026-07-20T03:59:24.231563Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="3b50e3dec1ce491580a14f4d9947831e" audience="system" event="request_received" span="edge"
+INFO:     ('127.0.0.1', 36226) - "WebSocket /ws" [accepted]
+INFO:     connection open
+2026-07-20T03:59:24.247415330Z [INFO]  ts="2026-07-20T03:59:24.245261Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="3b50e3dec1ce491580a14f4d9947831e" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.247418220Z [DBUG]  ts="2026-07-20T03:59:24.245454Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="8c9115dce238470a924a72904e971f3c" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.251995137Z [DBUG]  ts="2026-07-20T03:59:24.248201Z" 
+fields={"method":"GET","path":"/user/calendar/sync","minted":true} service="gateway" 
+trace_id="83f652c9a2dc4165b5f35085903ade04" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35424 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.252489763Z [DBUG]  ts="2026-07-20T03:59:24.252022Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="3b50e3dec1ce491580a14f4d9947831e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36218 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.253062669Z [DBUG]  ts="2026-07-20T03:59:24.252716Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="c68a107a407840d09edd4f538c8924a9" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.253068079Z [DBUG]  ts="2026-07-20T03:59:24.252800Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="853f7964f64a4a5ca2bb7b859a8df99d" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.257842586Z [INFO]  ts="2026-07-20T03:59:24.254400Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="8c9115dce238470a924a72904e971f3c" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.257845736Z [DBUG]  ts="2026-07-20T03:59:24.257078Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="869f8b6fddad4a75a081e65d02dadb3e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37116 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.262525902Z [DBUG]  ts="2026-07-20T03:59:24.260592Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="8c9115dce238470a924a72904e971f3c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36228 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.262533502Z [INFO]  ts="2026-07-20T03:59:24.261079Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="853f7964f64a4a5ca2bb7b859a8df99d" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.263806463Z [DBUG]  ts="2026-07-20T03:59:24.262944Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="853f7964f64a4a5ca2bb7b859a8df99d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36266 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.273920281Z [DBUG]  ts="2026-07-20T03:59:24.270850Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="ad8f117e91b2443c8debcf684d090725" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.280008878Z [DBUG]  ts="2026-07-20T03:59:24.276408Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="69f46566d9b54530930a12f7dcdd2629" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.280015388Z [DBUG]  ts="2026-07-20T03:59:24.278106Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="b5ed75f54d684087bc7317db4e0b3bf2" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.294886693Z [DBUG]  ts="2026-07-20T03:59:24.282862Z" 
+fields={"method":"GET","path":"/agent/workspace/shared","minted":true} service="gateway" 
+trace_id="71003d45b7404ed3a979291c29edbac7" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.294899102Z [INFO]  ts="2026-07-20T03:59:24.287078Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="c68a107a407840d09edd4f538c8924a9" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T03:59:24.294901842Z [DBUG]  ts="2026-07-20T03:59:24.287382Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="4125f33020ac4d7b9895372c6075a00b" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.294904862Z [DBUG]  ts="2026-07-20T03:59:24.288746Z" 
+fields={"method":"GET","path":"/agent/routines","minted":true} service="gateway" 
+trace_id="3a1c8678b4d94b77b58e8aac7530dc33" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.294910292Z [DBUG]  ts="2026-07-20T03:59:24.289958Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="c68a107a407840d09edd4f538c8924a9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36254 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.294915802Z [DBUG]  ts="2026-07-20T03:59:24.291959Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="872d778c3b014639a6cb4138172b5c1e" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.295482269Z [DBUG]  ts="2026-07-20T03:59:24.294134Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="be48ff3f08764304aae05b152ae9aba7" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.295486779Z [DBUG]  ts="2026-07-20T03:59:24.294624Z" 
+fields={"method":"GET","path":"/agent/models","minted":true} service="gateway" 
+trace_id="b638af6744a0404893dc33ee4f51ec13" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.318122338Z [INFO]  ts="2026-07-20T03:59:24.315841Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="ad8f117e91b2443c8debcf684d090725" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.318133938Z [DBUG]  ts="2026-07-20T03:59:24.317490Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="ad8f117e91b2443c8debcf684d090725" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36228 - "GET /agent/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.326522438Z [DBUG]  ts="2026-07-20T03:59:24.321998Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="b5ed75f54d684087bc7317db4e0b3bf2" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36276 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.326536278Z [INFO]  ts="2026-07-20T03:59:24.323208Z" 
+fields={"method":"GET","path":"/agent/routines"} service="gateway" trace_id="3a1c8678b4d94b77b58e8aac7530dc33" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.326546258Z [INFO]  ts="2026-07-20T03:59:24.318561Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="69f46566d9b54530930a12f7dcdd2629" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.326551448Z [DBUG]  ts="2026-07-20T03:59:24.320010Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="69f46566d9b54530930a12f7dcdd2629" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36266 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.326563048Z [INFO]  ts="2026-07-20T03:59:24.320818Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="b5ed75f54d684087bc7317db4e0b3bf2" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:38440 - "GET /schedule?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34354 - "GET /api/routines HTTP/1.1" 200 OK
+2026-07-20T03:59:24.333798877Z [DBUG]  ts="2026-07-20T03:59:24.330195Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/routines","downstream_status":200} service="gateway" 
+trace_id="3a1c8678b4d94b77b58e8aac7530dc33" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36288 - "GET /agent/routines HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34344 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.373049119Z [DBUG]  ts="2026-07-20T03:59:24.352714Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="b638af6744a0404893dc33ee4f51ec13" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36310 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.373058479Z [DBUG]  ts="2026-07-20T03:59:24.370245Z" 
+fields={"method":"GET","path":"/meetings","minted":true} service="gateway" trace_id="8c89341ddc2a4e3aabe5a9b4fc82ae79" 
+audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.373121038Z [INFO]  ts="2026-07-20T03:59:24.350279Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="b638af6744a0404893dc33ee4f51ec13" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T03:59:24.379008167Z [INFO]  ts="2026-07-20T03:59:24.376664Z" 
+fields={"method":"GET","path":"/user/calendar/sync"} service="gateway" trace_id="83f652c9a2dc4165b5f35085903ade04" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.379016637Z [INFO]  ts="2026-07-20T03:59:24.377847Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="869f8b6fddad4a75a081e65d02dadb3e" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.380414917Z [DBUG]  ts="2026-07-20T03:59:24.379319Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="869f8b6fddad4a75a081e65d02dadb3e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36218 - "GET /agent/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37694 - "GET /user/calendar/sync HTTP/1.1" 200 OK
+2026-07-20T03:59:24.381664368Z [DBUG]  ts="2026-07-20T03:59:24.380792Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/user/calendar/sync","downstream_status":200} service="gateway" 
+trace_id="83f652c9a2dc4165b5f35085903ade04" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36242 - "GET /user/calendar/sync HTTP/1.1" 200 OK
+2026-07-20T03:59:24.382887910Z [INFO]  ts="2026-07-20T03:59:24.382045Z" fields={"method":"GET","path":"/meetings"} 
+service="gateway" trace_id="8c89341ddc2a4e3aabe5a9b4fc82ae79" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T03:59:24.395644739Z [INFO]  ts="2026-07-20T03:59:24.386579Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="be48ff3f08764304aae05b152ae9aba7" audience="user" event="request_accepted" span="auth" 
+user_id=5
+2026-07-20T03:59:24.395655169Z [INFO]  ts="2026-07-20T03:59:24.389207Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="872d778c3b014639a6cb4138172b5c1e" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:34344 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.395669219Z [DBUG]  ts="2026-07-20T03:59:24.390156Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="be48ff3f08764304aae05b152ae9aba7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36302 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.395679129Z [INFO]  ts="2026-07-20T03:59:24.390741Z" 
+fields={"method":"GET","path":"/agent/workspace/shared"} service="gateway" trace_id="71003d45b7404ed3a979291c29edbac7" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.397461986Z [INFO]  ts="2026-07-20T03:59:24.391278Z" fields={"count":10} 
+service="transcription-collector" trace_id="701c094c6df4457295e64a1bc3c34036" audience="user" event="meetings_listed" 
+span="meetings.list" user_id=5
+2026-07-20T03:59:24.397468626Z [DBUG]  ts="2026-07-20T03:59:24.391492Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="872d778c3b014639a6cb4138172b5c1e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36296 - "GET /agent/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37694 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T03:59:24.397482486Z [DBUG]  ts="2026-07-20T03:59:24.392473Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/meetings","downstream_status":200} service="gateway" 
+trace_id="8c89341ddc2a4e3aabe5a9b4fc82ae79" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36224 - "GET /meetings HTTP/1.1" 200 OK
+2026-07-20T03:59:24.397494476Z [INFO]  ts="2026-07-20T03:59:24.394496Z" fields={"method":"GET","path":"/agent/models"} 
+service="gateway" trace_id="4125f33020ac4d7b9895372c6075a00b" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:34354 - "GET /api/models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34344 - "GET /api/workspace/shared HTTP/1.1" 200 OK
+2026-07-20T03:59:24.397509256Z [DBUG]  ts="2026-07-20T03:59:24.396017Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models","downstream_status":200} service="gateway" 
+trace_id="4125f33020ac4d7b9895372c6075a00b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36286 - "GET /agent/models HTTP/1.1" 200 OK
+2026-07-20T03:59:24.398119111Z [DBUG]  ts="2026-07-20T03:59:24.396439Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/shared","downstream_status":200} service="gateway" 
+trace_id="71003d45b7404ed3a979291c29edbac7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36280 - "GET /agent/workspace/shared HTTP/1.1" 200 OK
+2026-07-20T03:59:24.941047265Z [DBUG]  ts="2026-07-20T03:59:24.729799Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/calendar","downstream_status":200} service="gateway" 
+trace_id="5836dd85a8e24b7d8d67aa56843fdf2c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36218 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.941057075Z [DBUG]  ts="2026-07-20T03:59:24.730714Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1","minted":true} service="gateway" 
+trace_id="89eed1d05a5046189a69751470729e8d" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941060885Z [DBUG]  ts="2026-07-20T03:59:24.734517Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3","minted":true} service="gateway" 
+trace_id="15bb7143b7cb48e9bde4e095fe810b8f" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941063805Z [DBUG]  ts="2026-07-20T03:59:24.735624Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2","minted":true} service="gateway" 
+trace_id="d6359285578b496c9ea216ca9cbb1280" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941131894Z [DBUG]  ts="2026-07-20T03:59:24.718620Z" 
+fields={"method":"GET","path":"/user/calendar","minted":true} service="gateway" 
+trace_id="5836dd85a8e24b7d8d67aa56843fdf2c" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941144704Z [INFO]  ts="2026-07-20T03:59:24.725589Z" 
+fields={"method":"GET","path":"/user/calendar"} service="gateway" trace_id="5836dd85a8e24b7d8d67aa56843fdf2c" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37116 - "GET /user/calendar HTTP/1.1" 200 OK
+2026-07-20T03:59:24.941395522Z [DBUG]  ts="2026-07-20T03:59:24.736639Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4","minted":true} service="gateway" 
+trace_id="b41b8c5d8584478eb3c5880361eddc79" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941403222Z [DBUG]  ts="2026-07-20T03:59:24.739684Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7","minted":true} service="gateway" 
+trace_id="559bcf7ae307460c9d59190542f68c62" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941406682Z [INFO]  ts="2026-07-20T03:59:24.741260Z" 
+fields={"method":"GET","path":"/transcripts/by-id/1"} service="gateway" trace_id="89eed1d05a5046189a69751470729e8d" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.941409662Z [DBUG]  ts="2026-07-20T03:59:24.741457Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9","minted":true} service="gateway" 
+trace_id="b5809f31fdfe43fdab2862af57f3c503" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941412282Z [DBUG]  ts="2026-07-20T03:59:24.741974Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6","minted":true} service="gateway" 
+trace_id="c12c9f61ca7f4ab08a75a8ec6b460fef" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.941415182Z [DBUG]  ts="2026-07-20T03:59:24.742548Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8","minted":true} service="gateway" 
+trace_id="f951221d7de54bd9ac117bbe449d2179" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.942025158Z [DBUG]  ts="2026-07-20T03:59:24.746669Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10","minted":true} service="gateway" 
+trace_id="43297c04f98f4d5d86b5b7894611ebfd" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.942034698Z [DBUG]  ts="2026-07-20T03:59:24.747052Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5","minted":true} service="gateway" 
+trace_id="52adac92fec34f9ba83045c95921384e" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:24.942039968Z [INFO]  ts="2026-07-20T03:59:24.748082Z" 
+fields={"method":"GET","path":"/transcripts/by-id/3"} service="gateway" trace_id="15bb7143b7cb48e9bde4e095fe810b8f" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.942051188Z [INFO]  ts="2026-07-20T03:59:24.748850Z" 
+fields={"method":"GET","path":"/transcripts/by-id/2"} service="gateway" trace_id="d6359285578b496c9ea216ca9cbb1280" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.942066758Z [INFO]  ts="2026-07-20T03:59:24.750516Z" 
+fields={"method":"GET","path":"/transcripts/by-id/4"} service="gateway" trace_id="b41b8c5d8584478eb3c5880361eddc79" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.942702663Z [INFO]  ts="2026-07-20T03:59:24.753028Z" 
+fields={"method":"GET","path":"/transcripts/by-id/7"} service="gateway" trace_id="559bcf7ae307460c9d59190542f68c62" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.942708703Z [INFO]  ts="2026-07-20T03:59:24.754105Z" 
+fields={"method":"GET","path":"/transcripts/by-id/9"} service="gateway" trace_id="b5809f31fdfe43fdab2862af57f3c503" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.942714383Z [INFO]  ts="2026-07-20T03:59:24.754927Z" fields={"segments":0} 
+service="transcription-collector" trace_id="b0917e3719954ad28e47fcc6cbfdd37e" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="1"
+2026-07-20T03:59:24.942717283Z [INFO]  ts="2026-07-20T03:59:24.755614Z" 
+fields={"method":"GET","path":"/transcripts/by-id/6"} service="gateway" trace_id="c12c9f61ca7f4ab08a75a8ec6b460fef" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37694 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.942726443Z [INFO]  ts="2026-07-20T03:59:24.757286Z" 
+fields={"method":"GET","path":"/transcripts/by-id/10"} service="gateway" trace_id="43297c04f98f4d5d86b5b7894611ebfd" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.943377448Z [DBUG]  ts="2026-07-20T03:59:24.757461Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/1","downstream_status":200} service="gateway" 
+trace_id="89eed1d05a5046189a69751470729e8d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36224 - "GET /transcripts/by-id/1 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.943385388Z [INFO]  ts="2026-07-20T03:59:24.758273Z" 
+fields={"method":"GET","path":"/transcripts/by-id/5"} service="gateway" trace_id="52adac92fec34f9ba83045c95921384e" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.943392538Z [INFO]  ts="2026-07-20T03:59:24.759850Z" 
+fields={"method":"GET","path":"/transcripts/by-id/8"} service="gateway" trace_id="f951221d7de54bd9ac117bbe449d2179" 
+audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T03:59:24.944084463Z [INFO]  ts="2026-07-20T03:59:24.767609Z" fields={"segments":0} 
+service="transcription-collector" trace_id="b43f1305e19946669867045e9cbe893c" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="3"
+2026-07-20T03:59:24.944089513Z [INFO]  ts="2026-07-20T03:59:24.767697Z" fields={"segments":0} 
+service="transcription-collector" trace_id="8554bee53d724a4ca0bb5755f9b0c913" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="2"
+2026-07-20T03:59:24.944091923Z [INFO]  ts="2026-07-20T03:59:24.767733Z" fields={"segments":0} 
+service="transcription-collector" trace_id="3d872f4aa1c6442eaa972b721e0b4250" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="4"
+INFO:     127.0.0.1:37704 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37714 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37720 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945048856Z [DBUG]  ts="2026-07-20T03:59:24.820318Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/2","downstream_status":200} service="gateway" 
+trace_id="d6359285578b496c9ea216ca9cbb1280" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T03:59:24.945051556Z [DBUG]  ts="2026-07-20T03:59:24.820664Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/4","downstream_status":200} service="gateway" 
+trace_id="b41b8c5d8584478eb3c5880361eddc79" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T03:59:24.945066486Z [DBUG]  ts="2026-07-20T03:59:24.820799Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/3","downstream_status":200} service="gateway" 
+trace_id="15bb7143b7cb48e9bde4e095fe810b8f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36228 - "GET /transcripts/by-id/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36230 - "GET /transcripts/by-id/4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36218 - "GET /transcripts/by-id/3 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945077196Z [INFO]  ts="2026-07-20T03:59:24.838788Z" fields={"segments":0} 
+service="transcription-collector" trace_id="fe9d36cd32cd4545a3a67b371fea2861" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="5"
+INFO:     127.0.0.1:37756 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945651823Z [INFO]  ts="2026-07-20T03:59:24.839917Z" fields={"segments":0} 
+service="transcription-collector" trace_id="a21c3c55764c491487a9762a1b9cf0c1" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="7"
+INFO:     127.0.0.1:37722 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945663032Z [DBUG]  ts="2026-07-20T03:59:24.840090Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/5","downstream_status":200} service="gateway" 
+trace_id="52adac92fec34f9ba83045c95921384e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36286 - "GET /transcripts/by-id/5 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945669832Z [DBUG]  ts="2026-07-20T03:59:24.840907Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/7","downstream_status":200} service="gateway" 
+trace_id="559bcf7ae307460c9d59190542f68c62" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36242 - "GET /transcripts/by-id/7 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945676802Z [INFO]  ts="2026-07-20T03:59:24.841115Z" fields={"segments":0} 
+service="transcription-collector" trace_id="06c10b1dfef0433fa31d6efdb1b4486c" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="8"
+INFO:     127.0.0.1:37770 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.945683722Z [DBUG]  ts="2026-07-20T03:59:24.842376Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/8","downstream_status":200} service="gateway" 
+trace_id="f951221d7de54bd9ac117bbe449d2179" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36276 - "GET /transcripts/by-id/8 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.946612725Z [INFO]  ts="2026-07-20T03:59:24.846329Z" fields={"segments":31} 
+service="transcription-collector" trace_id="d7179d05765f46a78da6d6e2d37bd544" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="9"
+2026-07-20T03:59:24.946615565Z [INFO]  ts="2026-07-20T03:59:24.846528Z" fields={"segments":0} 
+service="transcription-collector" trace_id="5b7bf6b2305747b09c21ba113610b79f" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="6"
+2026-07-20T03:59:24.946617995Z [INFO]  ts="2026-07-20T03:59:24.846569Z" fields={"segments":18} 
+service="transcription-collector" trace_id="50c4b089de254b988c51d42bd56093d1" audience="user" 
+event="transcript_served" span="transcripts.get_by_id" user_id=5 meeting_id="10"
+INFO:     127.0.0.1:37738 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37754 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37694 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T03:59:24.946629575Z [DBUG]  ts="2026-07-20T03:59:24.847731Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/9","downstream_status":200} service="gateway" 
+trace_id="b5809f31fdfe43fdab2862af57f3c503" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T03:59:24.946631865Z [DBUG]  ts="2026-07-20T03:59:24.847941Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/6","downstream_status":200} service="gateway" 
+trace_id="c12c9f61ca7f4ab08a75a8ec6b460fef" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T03:59:24.947861006Z [DBUG]  ts="2026-07-20T03:59:24.848100Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8081/transcripts/by-id/10","downstream_status":200} service="gateway" 
+trace_id="43297c04f98f4d5d86b5b7894611ebfd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36254 - "GET /transcripts/by-id/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36266 - "GET /transcripts/by-id/6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36280 - "GET /transcripts/by-id/10 HTTP/1.1" 200 OK
+2026-07-20T03:59:40.875396975Z [DBUG]  ts="2026-07-20T03:59:40.869873Z" 
+fields={"method":"POST","path":"/agent/chat","minted":true} service="gateway" 
+trace_id="1ff32b0c95a043ac83364965961cd2c7" audience="system" event="request_received" span="edge"
+2026-07-20T03:59:40.877378420Z [INFO]  ts="2026-07-20T03:59:40.876502Z" fields={"method":"POST","path":"/agent/chat"} 
+service="gateway" trace_id="1ff32b0c95a043ac83364965961cd2c7" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:33048 - "POST /agent/chat HTTP/1.1" 200 OK
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+workload agent-5-chat-chat-mrson3ij exited 126 ΓÇö output tail (full log: 
+/tmp/vexa-workloads/agent-5-chat-chat-mrson3ij.log):
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+2026-07-20T03:59:40.940001567Z [INFO]  ts="2026-07-20T03:59:40.935967Z" 
+fields={"workload_id":"agent-5-chat-chat-mrson3ij","profile":"agent"} service="runtime" 
+trace_id="d1f8893fd3364de09979667c667f94a6" audience="system" event="workload_spawned" span="workloads.create"
+INFO:     127.0.0.1:35304 - "POST /workloads HTTP/1.1" 201 Created
+INFO:     127.0.0.1:38576 - "POST /api/chat HTTP/1.1" 200 OK
+workload agent-5-chat-chat-mrson3ij exited 126 ΓÇö output tail (full log: 
+/tmp/vexa-workloads/agent-5-chat-chat-mrson3ij.log):
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+INFO:     127.0.0.1:35306 - "GET /workloads/agent-5-chat-chat-mrson3ij HTTP/1.1" 200 OK
+warm delivery missed for unit=agent-5-chat-chat-mrson3ij (worker exited) ΓÇö respawning
+2026-07-20T03:59:41.457996677Z [INFO]  ts="2026-07-20T03:59:41.448676Z" 
+fields={"workload_id":"agent-5-chat-chat-mrson3ij","profile":"agent"} service="runtime" 
+trace_id="557a396bd69c4bc0bbb713300bcb5425" audience="system" event="workload_spawned" span="workloads.create"
+INFO:     127.0.0.1:35310 - "POST /workloads HTTP/1.1" 201 Created
+INFO:     127.0.0.1:35884 - "GET /internal/calendar-configs HTTP/1.1" 200 OK
+2026-07-20T04:01:27.455118857Z [DBUG]  ts="2026-07-20T04:01:27.444446Z" 
+fields={"method":"POST","path":"/agent/chat","minted":true} service="gateway" 
+trace_id="02ebbe4e9e4f48e9856e1a253a78c234" audience="system" event="request_received" span="edge"
+2026-07-20T04:01:27.455125807Z [INFO]  ts="2026-07-20T04:01:27.451744Z" fields={"method":"POST","path":"/agent/chat"} 
+service="gateway" trace_id="02ebbe4e9e4f48e9856e1a253a78c234" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37944 - "POST /agent/chat HTTP/1.1" 200 OK
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+workload agent-5-chat-chat-mrson3ij exited 126 ΓÇö output tail (full log: 
+/tmp/vexa-workloads/agent-5-chat-chat-mrson3ij.log):
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+2026-07-20T04:01:27.512035813Z [INFO]  ts="2026-07-20T04:01:27.505689Z" 
+fields={"workload_id":"agent-5-chat-chat-mrson3ij","profile":"agent"} service="runtime" 
+trace_id="78d4a9bfaf424be5b8173372f1edbfab" audience="system" event="workload_spawned" span="workloads.create"
+INFO:     127.0.0.1:36480 - "POST /workloads HTTP/1.1" 201 Created
+INFO:     127.0.0.1:34936 - "POST /api/chat HTTP/1.1" 200 OK
+workload agent-5-chat-chat-mrson3ij exited 126 ΓÇö output tail (full log: 
+/tmp/vexa-workloads/agent-5-chat-chat-mrson3ij.log):
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+INFO:     127.0.0.1:36496 - "GET /workloads/agent-5-chat-chat-mrson3ij HTTP/1.1" 200 OK
+warm delivery missed for unit=agent-5-chat-chat-mrson3ij (worker exited) ΓÇö respawning
+2026-07-20T04:01:28.030493814Z [INFO]  ts="2026-07-20T04:01:28.024626Z" 
+fields={"workload_id":"agent-5-chat-chat-mrson3ij","profile":"agent"} service="runtime" 
+trace_id="103bd1ea20c948868912f3e35b1ac11c" audience="system" event="workload_spawned" span="workloads.create"
+INFO:     127.0.0.1:36506 - "POST /workloads HTTP/1.1" 201 Created
+2026-07-20T04:02:25.999861228Z [DBUG]  ts="2026-07-20T04:02:25.945090Z" 
+fields={"method":"POST","path":"/agent/chat","minted":true} service="gateway" 
+trace_id="4cd7886d093946dc98f7dfd54a9d0fe3" audience="system" event="request_received" span="edge"
+2026-07-20T04:02:25.999885387Z [INFO]  ts="2026-07-20T04:02:25.952529Z" fields={"method":"POST","path":"/agent/chat"} 
+service="gateway" trace_id="4cd7886d093946dc98f7dfd54a9d0fe3" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:36072 - "POST /agent/chat HTTP/1.1" 200 OK
+workload agent-5-chat-chat-mrson3ij exited 126 ΓÇö output tail (full log: 
+/tmp/vexa-workloads/agent-5-chat-chat-mrson3ij.log):
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+2026-07-20T04:02:26.006824970Z [INFO]  ts="2026-07-20T04:02:26.003974Z" 
+fields={"workload_id":"agent-5-chat-chat-mrson3ij","profile":"agent"} service="runtime" 
+trace_id="8ee0017ca3064b96bfb405d51974acba" audience="system" event="workload_spawned" span="workloads.create"
+INFO:     127.0.0.1:33756 - "POST /workloads HTTP/1.1" 201 Created
+INFO:     127.0.0.1:37580 - "POST /api/chat HTTP/1.1" 200 OK
+workload agent-5-chat-chat-mrson3ij exited 126 ΓÇö output tail (full log: 
+/tmp/vexa-workloads/agent-5-chat-chat-mrson3ij.log):
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: /opt/venvs/agent/bin/python: Permission denied
+/usr/local/bin/vexa-agent-worker: line 21: exec: /opt/venvs/agent/bin/python: cannot execute: Permission denied
+INFO:     127.0.0.1:33760 - "GET /workloads/agent-5-chat-chat-mrson3ij HTTP/1.1" 200 OK
+warm delivery missed for unit=agent-5-chat-chat-mrson3ij (worker exited) ΓÇö respawning
+2026-07-20T04:02:26.519852800Z [INFO]  ts="2026-07-20T04:02:26.519182Z" 
+fields={"workload_id":"agent-5-chat-chat-mrson3ij","profile":"agent"} service="runtime" 
+trace_id="987d546288bc419bbf554f5c4d6eb657" audience="system" event="workload_spawned" span="workloads.create"
+INFO:     127.0.0.1:33774 - "POST /workloads HTTP/1.1" 201 Created
+2026-07-20T04:02:58.447503892Z [DBUG]  ts="2026-07-20T04:02:58.436575Z" 
+fields={"method":"GET","path":"/user/models","minted":true} service="gateway" 
+trace_id="88983d6a2ee64bd88270fbf3626b77f7" audience="system" event="request_received" span="edge"
+2026-07-20T04:02:58.447512012Z [DBUG]  ts="2026-07-20T04:02:58.442632Z" 
+fields={"method":"GET","path":"/user/transcription","minted":true} service="gateway" 
+trace_id="91ddb04e8a5b4877a51a0df7781bfc8b" audience="system" event="request_received" span="edge"
+2026-07-20T04:02:58.447518992Z [INFO]  ts="2026-07-20T04:02:58.444664Z" fields={"method":"GET","path":"/user/models"} 
+service="gateway" trace_id="88983d6a2ee64bd88270fbf3626b77f7" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37414 - "GET /user/models HTTP/1.1" 200 OK
+2026-07-20T04:02:58.454785191Z [DBUG]  ts="2026-07-20T04:02:58.451737Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/models","downstream_status":200} service="gateway" 
+trace_id="88983d6a2ee64bd88270fbf3626b77f7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38400 - "GET /user/models HTTP/1.1" 200 OK
+2026-07-20T04:02:58.454794461Z [INFO]  ts="2026-07-20T04:02:58.452388Z" 
+fields={"method":"GET","path":"/user/transcription"} service="gateway" trace_id="91ddb04e8a5b4877a51a0df7781bfc8b" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37414 - "GET /user/transcription HTTP/1.1" 200 OK
+2026-07-20T04:02:58.461545884Z [DBUG]  ts="2026-07-20T04:02:58.456239Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8001/user/transcription","downstream_status":200} service="gateway" 
+trace_id="91ddb04e8a5b4877a51a0df7781bfc8b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38354 - "GET /user/transcription HTTP/1.1" 200 OK
+2026-07-20T04:03:14.368725324Z [DBUG]  ts="2026-07-20T04:03:14.363396Z" 
+fields={"method":"PUT","path":"/user/models","minted":true} service="gateway" 
+trace_id="d3764ae5a29e4c8e81be3ca46b4734fd" audience="system" event="request_received" span="edge"
+2026-07-20T04:03:14.380576052Z [INFO]  ts="2026-07-20T04:03:14.375566Z" fields={"method":"PUT","path":"/user/models"} 
+service="gateway" trace_id="d3764ae5a29e4c8e81be3ca46b4734fd" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37362 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:03:14.388089689Z [DBUG]  ts="2026-07-20T04:03:14.383935Z" 
+fields={"method":"PUT","path":"http://127.0.0.1:8001/user/models","downstream_status":200} service="gateway" 
+trace_id="d3764ae5a29e4c8e81be3ca46b4734fd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38200 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:03:26.152691606Z [DBUG]  ts="2026-07-20T04:03:26.055370Z" 
+fields={"method":"GET","path":"/agent/models/test","minted":true} service="gateway" 
+trace_id="f00586a6cffc4d6798d808116c105fc8" audience="system" event="request_received" span="edge"
+2026-07-20T04:03:26.152698676Z [INFO]  ts="2026-07-20T04:03:26.061777Z" 
+fields={"method":"GET","path":"/agent/models/test"} service="gateway" trace_id="f00586a6cffc4d6798d808116c105fc8" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36702 - "GET /api/models/test HTTP/1.1" 200 OK
+2026-07-20T04:03:26.224512876Z [DBUG]  ts="2026-07-20T04:03:26.224052Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models/test","downstream_status":200} service="gateway" 
+trace_id="f00586a6cffc4d6798d808116c105fc8" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34978 - "GET /agent/models/test HTTP/1.1" 200 OK
+2026-07-20T04:03:40.811957358Z [DBUG]  ts="2026-07-20T04:03:40.808890Z" 
+fields={"method":"PUT","path":"/user/models","minted":true} service="gateway" 
+trace_id="94422064749d42cf90ff0d60f650bee2" audience="system" event="request_received" span="edge"
+2026-07-20T04:03:40.822783773Z [INFO]  ts="2026-07-20T04:03:40.819152Z" fields={"method":"PUT","path":"/user/models"} 
+service="gateway" trace_id="94422064749d42cf90ff0d60f650bee2" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:38710 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:03:40.835593113Z [DBUG]  ts="2026-07-20T04:03:40.831410Z" 
+fields={"method":"PUT","path":"http://127.0.0.1:8001/user/models","downstream_status":200} service="gateway" 
+trace_id="94422064749d42cf90ff0d60f650bee2" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37774 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:03:48.063870208Z [DBUG]  ts="2026-07-20T04:03:48.062925Z" 
+fields={"method":"GET","path":"/agent/models/test","minted":true} service="gateway" 
+trace_id="c0b370d17aa7430a9874320a869b9e4b" audience="system" event="request_received" span="edge"
+2026-07-20T04:03:48.074487114Z [INFO]  ts="2026-07-20T04:03:48.071912Z" 
+fields={"method":"GET","path":"/agent/models/test"} service="gateway" trace_id="c0b370d17aa7430a9874320a869b9e4b" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:32862 - "GET /api/models/test HTTP/1.1" 200 OK
+2026-07-20T04:03:48.080474543Z [DBUG]  ts="2026-07-20T04:03:48.077559Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models/test","downstream_status":200} service="gateway" 
+trace_id="c0b370d17aa7430a9874320a869b9e4b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33176 - "GET /agent/models/test HTTP/1.1" 200 OK
+2026-07-20T04:03:59.749390340Z [DBUG]  ts="2026-07-20T04:03:59.746596Z" 
+fields={"method":"GET","path":"/agent/v1","minted":true} service="gateway" trace_id="30c4553dc8a14617b5b0f778ca138f36" 
+audience="system" event="request_received" span="edge"
+2026-07-20T04:03:59.759824148Z [INFO]  ts="2026-07-20T04:03:59.755407Z" fields={"method":"GET","path":"/agent/v1"} 
+service="gateway" trace_id="30c4553dc8a14617b5b0f778ca138f36" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:32872 - "GET /api/v1 HTTP/1.1" 404 Not Found
+2026-07-20T04:03:59.759829748Z [DBUG]  ts="2026-07-20T04:03:59.757054Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/v1","downstream_status":404} service="gateway" 
+trace_id="30c4553dc8a14617b5b0f778ca138f36" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36914 - "GET /agent/v1 HTTP/1.1" 404 Not Found
+2026-07-20T04:04:49.469748975Z [DBUG]  ts="2026-07-20T04:04:49.341656Z" 
+fields={"method":"PUT","path":"/user/models","minted":true} service="gateway" 
+trace_id="1b32f453a8824a44b741addb523d6578" audience="system" event="request_received" span="edge"
+2026-07-20T04:04:49.469758955Z [INFO]  ts="2026-07-20T04:04:49.348635Z" fields={"method":"PUT","path":"/user/models"} 
+service="gateway" trace_id="1b32f453a8824a44b741addb523d6578" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:37138 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:04:49.469764455Z [DBUG]  ts="2026-07-20T04:04:49.358176Z" 
+fields={"method":"PUT","path":"http://127.0.0.1:8001/user/models","downstream_status":200} service="gateway" 
+trace_id="1b32f453a8824a44b741addb523d6578" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37524 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:04:56.000146505Z [DBUG]  ts="2026-07-20T04:04:55.998621Z" 
+fields={"method":"GET","path":"/agent/models/test","minted":true} service="gateway" 
+trace_id="20ea640548e6478aa64dfcf7a204ae6c" audience="system" event="request_received" span="edge"
+2026-07-20T04:04:56.011045799Z [INFO]  ts="2026-07-20T04:04:56.010697Z" 
+fields={"method":"GET","path":"/agent/models/test"} service="gateway" trace_id="20ea640548e6478aa64dfcf7a204ae6c" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37848 - "GET /api/models/test HTTP/1.1" 200 OK
+2026-07-20T04:04:56.171029984Z [DBUG]  ts="2026-07-20T04:04:56.123814Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models/test","downstream_status":200} service="gateway" 
+trace_id="20ea640548e6478aa64dfcf7a204ae6c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37556 - "GET /agent/models/test HTTP/1.1" 200 OK
+2026-07-20T04:05:23.733130136Z [DBUG]  ts="2026-07-20T04:05:23.729495Z" 
+fields={"method":"PUT","path":"/user/models","minted":true} service="gateway" 
+trace_id="4de8f6ec67cc44dfae7a25e95298d12f" audience="system" event="request_received" span="edge"
+2026-07-20T04:05:23.739886049Z [INFO]  ts="2026-07-20T04:05:23.736330Z" fields={"method":"PUT","path":"/user/models"} 
+service="gateway" trace_id="4de8f6ec67cc44dfae7a25e95298d12f" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:33820 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:05:23.750183728Z [DBUG]  ts="2026-07-20T04:05:23.742584Z" 
+fields={"method":"PUT","path":"http://127.0.0.1:8001/user/models","downstream_status":200} service="gateway" 
+trace_id="4de8f6ec67cc44dfae7a25e95298d12f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:37480 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:05:29.557680681Z [DBUG]  ts="2026-07-20T04:05:29.555056Z" 
+fields={"method":"GET","path":"/agent/models/test","minted":true} service="gateway" 
+trace_id="a7087c634dcf45598930614b3799e73b" audience="system" event="request_received" span="edge"
+2026-07-20T04:05:29.568683944Z [INFO]  ts="2026-07-20T04:05:29.563705Z" 
+fields={"method":"GET","path":"/agent/models/test"} service="gateway" trace_id="a7087c634dcf45598930614b3799e73b" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35862 - "GET /api/models/test HTTP/1.1" 200 OK
+2026-07-20T04:05:29.792473282Z [DBUG]  ts="2026-07-20T04:05:29.671727Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models/test","downstream_status":200} service="gateway" 
+trace_id="a7087c634dcf45598930614b3799e73b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38078 - "GET /agent/models/test HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /internal/calendar-configs HTTP/1.1" 200 OK
+2026-07-20T04:06:11.489296601Z [DBUG]  ts="2026-07-20T04:06:11.484646Z" 
+fields={"method":"PUT","path":"/user/models","minted":true} service="gateway" 
+trace_id="f268320478ee4abcb260ffbb783d11b9" audience="system" event="request_received" span="edge"
+2026-07-20T04:06:11.493949638Z [INFO]  ts="2026-07-20T04:06:11.492172Z" fields={"method":"PUT","path":"/user/models"} 
+service="gateway" trace_id="f268320478ee4abcb260ffbb783d11b9" audience="user" event="request_accepted" span="auth" 
+user_id=5
+INFO:     127.0.0.1:36856 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:06:11.503924789Z [DBUG]  ts="2026-07-20T04:06:11.498200Z" 
+fields={"method":"PUT","path":"http://127.0.0.1:8001/user/models","downstream_status":200} service="gateway" 
+trace_id="f268320478ee4abcb260ffbb783d11b9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34348 - "PUT /user/models HTTP/1.1" 200 OK
+2026-07-20T04:06:16.825774398Z [DBUG]  ts="2026-07-20T04:06:16.818749Z" 
+fields={"method":"GET","path":"/agent/models/test","minted":true} service="gateway" 
+trace_id="cf7a85a4d8cc4f50831766a6f552eab0" audience="system" event="request_received" span="edge"
+2026-07-20T04:06:16.826231896Z [INFO]  ts="2026-07-20T04:06:16.825635Z" 
+fields={"method":"GET","path":"/agent/models/test"} service="gateway" trace_id="cf7a85a4d8cc4f50831766a6f552eab0" 
+audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34436 - "GET /api/models/test HTTP/1.1" 200 OK
+2026-07-20T04:06:16.944420410Z [DBUG]  ts="2026-07-20T04:06:16.942931Z" 
+fields={"method":"GET","path":"http://127.0.0.1:8100/api/models/test","downstream_status":200} service="gateway" 
+trace_id="cf7a85a4d8cc4f50831766a6f552eab0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34348 - "GET /agent/models/test HTTP/1.1" 200 OK
+
+

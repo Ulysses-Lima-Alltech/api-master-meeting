@@ -1,0 +1,1000 @@
+﻿INFO:     127.0.0.1:33616 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:24.292155302Z [INFO]  ts="2026-07-20T04:06:24.266468Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="c121ca788e2443d9a9e0ee18c7278200" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:33650 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+2026-07-20T04:06:24.292162892Z [DBUG]  ts="2026-07-20T04:06:24.269009Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="77328ccc2cdf479187d2ab1f545e77d0" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35908 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:24.292167912Z [DBUG]  ts="2026-07-20T04:06:24.269785Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="c121ca788e2443d9a9e0ee18c7278200" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:32910 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33616 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:24.293236445Z [INFO]  ts="2026-07-20T04:06:24.273151Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="77328ccc2cdf479187d2ab1f545e77d0" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:33656 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35908 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:24.293248334Z [DBUG]  ts="2026-07-20T04:06:24.276830Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="77328ccc2cdf479187d2ab1f545e77d0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:32894 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:24.482452182Z [DBUG]  ts="2026-07-20T04:06:24.478396Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="18e1bd682dc244559e322b3acdcce1f8" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:33616 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:24.495414712Z [INFO]  ts="2026-07-20T04:06:24.487454Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="18e1bd682dc244559e322b3acdcce1f8" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:33664 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35908 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:24.496783312Z [DBUG]  ts="2026-07-20T04:06:24.495623Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="18e1bd682dc244559e322b3acdcce1f8" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:32894 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:24.796254571Z [DBUG]  ts="2026-07-20T04:06:24.757535Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="1ec9b36b61984f019b997259ca4ca3bf" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:33616 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:24.796270451Z [INFO]  ts="2026-07-20T04:06:24.765938Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="1ec9b36b61984f019b997259ca4ca3bf" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:33672 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35908 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:24.796299590Z [DBUG]  ts="2026-07-20T04:06:24.774476Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="1ec9b36b61984f019b997259ca4ca3bf" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:32894 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:24.901708054Z [DBUG]  ts="2026-07-20T04:06:24.898730Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="11b6515858f54f66b337e8d8004453f9" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:33616 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:24.907444373Z [INFO]  ts="2026-07-20T04:06:24.906818Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="11b6515858f54f66b337e8d8004453f9" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:33680 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35908 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:24.921710164Z [DBUG]  ts="2026-07-20T04:06:24.917211Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="11b6515858f54f66b337e8d8004453f9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:32894 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:30.160690501Z [DBUG]  ts="2026-07-20T04:06:30.133625Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="5f270310410c4a3482ef1c19928c2133" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34818 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:30.160696961Z [INFO]  ts="2026-07-20T04:06:30.144534Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="5f270310410c4a3482ef1c19928c2133" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34822 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37542 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:30.160707671Z [DBUG]  ts="2026-07-20T04:06:30.149717Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="5f270310410c4a3482ef1c19928c2133" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33022 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:30.309144514Z [DBUG]  ts="2026-07-20T04:06:30.272560Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="0a73cba4d2b944a290dddfc96dce4101" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33022 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:30.309156354Z [DBUG]  ts="2026-07-20T04:06:30.275595Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="0177c644c9514a8aaf8d2895aded7257" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34818 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:30.309185064Z [DBUG]  ts="2026-07-20T04:06:30.258568Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="0a73cba4d2b944a290dddfc96dce4101" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34818 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:30.309193874Z [INFO]  ts="2026-07-20T04:06:30.266952Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="0a73cba4d2b944a290dddfc96dce4101" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34826 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37542 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:30.309866199Z [INFO]  ts="2026-07-20T04:06:30.282593Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="0177c644c9514a8aaf8d2895aded7257" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34840 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37542 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:30.309876048Z [DBUG]  ts="2026-07-20T04:06:30.293517Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="0177c644c9514a8aaf8d2895aded7257" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33022 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:30.425875569Z [DBUG]  ts="2026-07-20T04:06:30.401465Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="de35c27e78f1435a8377e14653aa3ddc" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34818 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:30.425884599Z [INFO]  ts="2026-07-20T04:06:30.408507Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="de35c27e78f1435a8377e14653aa3ddc" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34842 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37542 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:30.425897709Z [DBUG]  ts="2026-07-20T04:06:30.417397Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="de35c27e78f1435a8377e14653aa3ddc" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33022 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:30.753244721Z [DBUG]  ts="2026-07-20T04:06:30.747914Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="057cfe132d3049bc9061fb819b600acd" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34818 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:30.758136667Z [INFO]  ts="2026-07-20T04:06:30.754836Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="057cfe132d3049bc9061fb819b600acd" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34844 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37542 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:30.763822988Z [DBUG]  ts="2026-07-20T04:06:30.759441Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="057cfe132d3049bc9061fb819b600acd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33022 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:30.930842810Z [DBUG]  ts="2026-07-20T04:06:30.877512Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="a70227bc043243c8817bb44df98a9ec7" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34818 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:30.930850300Z [INFO]  ts="2026-07-20T04:06:30.891565Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="a70227bc043243c8817bb44df98a9ec7" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34860 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37542 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:30.930860170Z [DBUG]  ts="2026-07-20T04:06:30.897075Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="a70227bc043243c8817bb44df98a9ec7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33022 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:36.191858948Z [DBUG]  ts="2026-07-20T04:06:36.128696Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="c0eca1e0ce2f46408a6933f37fae7db0" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34846 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:36.191866389Z [INFO]  ts="2026-07-20T04:06:36.135881Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="c0eca1e0ce2f46408a6933f37fae7db0" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34862 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34660 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:36.191875669Z [DBUG]  ts="2026-07-20T04:06:36.144992Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="c0eca1e0ce2f46408a6933f37fae7db0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38072 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34660 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:36.355451325Z [INFO]  ts="2026-07-20T04:06:36.263705Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="f049a96f55894c19ab06edbdb28cead8" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:06:36.355454735Z [DBUG]  ts="2026-07-20T04:06:36.264093Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="10223f5cfaae465da36c791bd68837d2" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:06:36.355474345Z [DBUG]  ts="2026-07-20T04:06:36.252401Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="10223f5cfaae465da36c791bd68837d2" audience="system" event="request_received" span="edge"
+2026-07-20T04:06:36.355477005Z [DBUG]  ts="2026-07-20T04:06:36.257187Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="f049a96f55894c19ab06edbdb28cead8" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34846 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:36.355484685Z [INFO]  ts="2026-07-20T04:06:36.259310Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="10223f5cfaae465da36c791bd68837d2" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34868 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34866 - "POST /internal/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38072 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34878 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34660 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:36.356375879Z [DBUG]  ts="2026-07-20T04:06:36.269190Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="f049a96f55894c19ab06edbdb28cead8" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38076 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:36.396201351Z [DBUG]  ts="2026-07-20T04:06:36.387409Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="50629a312c274521824bdd206369f66a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34846 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:36.400749159Z [INFO]  ts="2026-07-20T04:06:36.398598Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="50629a312c274521824bdd206369f66a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34886 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34660 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:36.406682228Z [DBUG]  ts="2026-07-20T04:06:36.404637Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="50629a312c274521824bdd206369f66a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38072 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:36.747998942Z [DBUG]  ts="2026-07-20T04:06:36.745757Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="6fe6e63c9e8b4af8bc8d3c5fb56a474c" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34846 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:36.755040474Z [INFO]  ts="2026-07-20T04:06:36.752297Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="6fe6e63c9e8b4af8bc8d3c5fb56a474c" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34898 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34660 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:36.759751080Z [DBUG]  ts="2026-07-20T04:06:36.756840Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="6fe6e63c9e8b4af8bc8d3c5fb56a474c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38072 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:36.919727172Z [DBUG]  ts="2026-07-20T04:06:36.870476Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="900844e2237d40f6b0a11c095f19712a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34846 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:36.919734202Z [INFO]  ts="2026-07-20T04:06:36.879449Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="900844e2237d40f6b0a11c095f19712a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34902 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34660 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:36.919745962Z [DBUG]  ts="2026-07-20T04:06:36.887475Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="900844e2237d40f6b0a11c095f19712a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38072 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:42.156846673Z [DBUG]  ts="2026-07-20T04:06:42.153881Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="6eacd91bcc0c409ab5c7287d8112867b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:42.162585823Z [INFO]  ts="2026-07-20T04:06:42.160834Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="6eacd91bcc0c409ab5c7287d8112867b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34914 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:42.167682258Z [DBUG]  ts="2026-07-20T04:06:42.165295Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="6eacd91bcc0c409ab5c7287d8112867b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38088 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:42.320245201Z [DBUG]  ts="2026-07-20T04:06:42.319196Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="e14c5b7ba22c47b0a27b5a04649a62c0" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:42.329008070Z [INFO]  ts="2026-07-20T04:06:42.327113Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="e14c5b7ba22c47b0a27b5a04649a62c0" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34928 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:42.333848916Z [DBUG]  ts="2026-07-20T04:06:42.331534Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="e14c5b7ba22c47b0a27b5a04649a62c0" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38088 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:43.116085949Z [DBUG]  ts="2026-07-20T04:06:43.115358Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="5d4499e9226d42ce8c9f9cd264758a1a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:43.126721884Z [INFO]  ts="2026-07-20T04:06:43.122752Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="5d4499e9226d42ce8c9f9cd264758a1a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34936 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:43.127735777Z [DBUG]  ts="2026-07-20T04:06:43.126954Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="5d4499e9226d42ce8c9f9cd264758a1a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38088 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:43.244126245Z [DBUG]  ts="2026-07-20T04:06:43.242913Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="430e670b4025408e87ce24bbc30f94aa" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:43.255154747Z [INFO]  ts="2026-07-20T04:06:43.250082Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="430e670b4025408e87ce24bbc30f94aa" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34944 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:43.255167907Z [DBUG]  ts="2026-07-20T04:06:43.254574Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="430e670b4025408e87ce24bbc30f94aa" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38088 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:43.507973320Z [INFO]  ts="2026-07-20T04:06:43.405592Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="c0cc1695b04c4afcb0c27b2d42354b59" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34956 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:43.507993260Z [DBUG]  ts="2026-07-20T04:06:43.419712Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="c0cc1695b04c4afcb0c27b2d42354b59" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38088 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:43.508022720Z [DBUG]  ts="2026-07-20T04:06:43.397751Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="c0cc1695b04c4afcb0c27b2d42354b59" audience="system" event="request_received" span="edge"
+2026-07-20T04:06:43.544891452Z [DBUG]  ts="2026-07-20T04:06:43.542034Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="02799dee4c714893b2c42b62c21c335a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:43.549736608Z [INFO]  ts="2026-07-20T04:06:43.548859Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="02799dee4c714893b2c42b62c21c335a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34966 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:43.554949502Z [DBUG]  ts="2026-07-20T04:06:43.553508Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="02799dee4c714893b2c42b62c21c335a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38088 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.140197014Z [DBUG]  ts="2026-07-20T04:06:48.134818Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="89f2ead77a1d49649df6111aa08a958d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:48.145620206Z [INFO]  ts="2026-07-20T04:06:48.143345Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="89f2ead77a1d49649df6111aa08a958d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37564 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:48.150514361Z [DBUG]  ts="2026-07-20T04:06:48.148355Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="89f2ead77a1d49649df6111aa08a958d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35594 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:48.265541048Z [DBUG]  ts="2026-07-20T04:06:48.254731Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="cb0e208bb1bd4457bb3307237247a21f" audience="system" event="request_received" span="edge"
+2026-07-20T04:06:48.265548118Z [DBUG]  ts="2026-07-20T04:06:48.259595Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="755e77cd131246179b02d1408033dba1" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:48.265553698Z [INFO]  ts="2026-07-20T04:06:48.261536Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="cb0e208bb1bd4457bb3307237247a21f" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37588 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37572 - "POST /internal/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:48.266560611Z [INFO]  ts="2026-07-20T04:06:48.265868Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="755e77cd131246179b02d1408033dba1" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:06:48.266562911Z [DBUG]  ts="2026-07-20T04:06:48.266233Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="cb0e208bb1bd4457bb3307237247a21f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35594 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37598 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.272560318Z [DBUG]  ts="2026-07-20T04:06:48.269631Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="755e77cd131246179b02d1408033dba1" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35600 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.511152671Z [DBUG]  ts="2026-07-20T04:06:48.379083Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="27a6c21d781f41faacdd0f5f4bbedc7f" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:48.511160591Z [INFO]  ts="2026-07-20T04:06:48.391634Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="27a6c21d781f41faacdd0f5f4bbedc7f" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37614 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.511171891Z [DBUG]  ts="2026-07-20T04:06:48.398423Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="27a6c21d781f41faacdd0f5f4bbedc7f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35594 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.782917612Z [DBUG]  ts="2026-07-20T04:06:48.756754Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="768d2b30729a45ca9fd18b4a1c2d7140" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:48.782925012Z [INFO]  ts="2026-07-20T04:06:48.764216Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="768d2b30729a45ca9fd18b4a1c2d7140" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37626 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:48.782934991Z [DBUG]  ts="2026-07-20T04:06:48.768762Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="768d2b30729a45ca9fd18b4a1c2d7140" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35594 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35594 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.929442267Z [DBUG]  ts="2026-07-20T04:06:48.881235Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="0834db23f172446a9b44b4189f954bbd" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34912 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:48.929460147Z [INFO]  ts="2026-07-20T04:06:48.898507Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="0834db23f172446a9b44b4189f954bbd" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37634 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34676 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:48.929473087Z [DBUG]  ts="2026-07-20T04:06:48.907376Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="0834db23f172446a9b44b4189f954bbd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:06:54.131118766Z [DBUG]  ts="2026-07-20T04:06:54.129767Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="ff007fd98bc34977891674e97f7d5224" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37642 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:54.140113603Z [INFO]  ts="2026-07-20T04:06:54.137775Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="ff007fd98bc34977891674e97f7d5224" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37646 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:54.150418171Z [DBUG]  ts="2026-07-20T04:06:54.145579Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="ff007fd98bc34977891674e97f7d5224" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35616 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:54.263175663Z [DBUG]  ts="2026-07-20T04:06:54.253037Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="74936c6fb79e43018e6f3b9c5f72ad93" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37642 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:54.268099289Z [DBUG]  ts="2026-07-20T04:06:54.263820Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="9f6db577f44546a193b48a0917b3ec28" audience="system" event="request_received" span="edge"
+2026-07-20T04:06:54.268102569Z [INFO]  ts="2026-07-20T04:06:54.265130Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="74936c6fb79e43018e6f3b9c5f72ad93" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37664 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:54.274236986Z [DBUG]  ts="2026-07-20T04:06:54.269969Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="74936c6fb79e43018e6f3b9c5f72ad93" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35616 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37654 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:54.274245305Z [INFO]  ts="2026-07-20T04:06:54.271073Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="9f6db577f44546a193b48a0917b3ec28" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37674 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:54.275635576Z [DBUG]  ts="2026-07-20T04:06:54.274978Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="9f6db577f44546a193b48a0917b3ec28" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35626 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:54.387952691Z [DBUG]  ts="2026-07-20T04:06:54.383049Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="905c436dd9be426eb34014df373efeff" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37642 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:54.396673870Z [INFO]  ts="2026-07-20T04:06:54.393723Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="905c436dd9be426eb34014df373efeff" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37690 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:54.405441078Z [DBUG]  ts="2026-07-20T04:06:54.403373Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="905c436dd9be426eb34014df373efeff" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35616 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:54.751739278Z [DBUG]  ts="2026-07-20T04:06:54.749149Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="862a0da5280d4557b8ac01a62ac26e5d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37642 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:54.761771387Z [INFO]  ts="2026-07-20T04:06:54.758161Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="862a0da5280d4557b8ac01a62ac26e5d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37692 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:54.762765250Z [DBUG]  ts="2026-07-20T04:06:54.762135Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="862a0da5280d4557b8ac01a62ac26e5d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35616 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:06:54.906465146Z [DBUG]  ts="2026-07-20T04:06:54.872949Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="f6662e85e11e4d368c32781be4e38e6d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37642 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:06:54.906473686Z [INFO]  ts="2026-07-20T04:06:54.879990Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="f6662e85e11e4d368c32781be4e38e6d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37700 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34856 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:06:54.906481926Z [DBUG]  ts="2026-07-20T04:06:54.884903Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="f6662e85e11e4d368c32781be4e38e6d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35616 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:00.148305239Z [DBUG]  ts="2026-07-20T04:07:00.137569Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="d1c9919c324648448cc53ea1879413d9" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:00.151190720Z [INFO]  ts="2026-07-20T04:07:00.150096Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="d1c9919c324648448cc53ea1879413d9" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34128 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:00.159536411Z [DBUG]  ts="2026-07-20T04:07:00.156097Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="d1c9919c324648448cc53ea1879413d9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34482 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:00.265810939Z [DBUG]  ts="2026-07-20T04:07:00.264043Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="d60e147a85744f52b54b0156ea320c3c" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:00.274600386Z [INFO]  ts="2026-07-20T04:07:00.271322Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="d60e147a85744f52b54b0156ea320c3c" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:07:00.274606236Z [DBUG]  ts="2026-07-20T04:07:00.272389Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="455397da53a14ee597910a1a05bc6f1f" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34132 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:00.280917222Z [DBUG]  ts="2026-07-20T04:07:00.278265Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="d60e147a85744f52b54b0156ea320c3c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34482 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:00.280932282Z [INFO]  ts="2026-07-20T04:07:00.279692Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="455397da53a14ee597910a1a05bc6f1f" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34136 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:00.295440081Z [DBUG]  ts="2026-07-20T04:07:00.285248Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="455397da53a14ee597910a1a05bc6f1f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34496 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34482 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:00.418567980Z [DBUG]  ts="2026-07-20T04:07:00.397876Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="92d129c1ca9a4ae7a4f60fc5bc950476" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:00.418580750Z [INFO]  ts="2026-07-20T04:07:00.405054Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="92d129c1ca9a4ae7a4f60fc5bc950476" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34148 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:00.418596840Z [DBUG]  ts="2026-07-20T04:07:00.410508Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="92d129c1ca9a4ae7a4f60fc5bc950476" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:07:00.768382784Z [DBUG]  ts="2026-07-20T04:07:00.750710Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="e70805118d7b4ef7a339bb07db7f7f72" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:00.768390954Z [INFO]  ts="2026-07-20T04:07:00.758200Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="e70805118d7b4ef7a339bb07db7f7f72" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34156 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:00.768399714Z [DBUG]  ts="2026-07-20T04:07:00.762600Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="e70805118d7b4ef7a339bb07db7f7f72" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34482 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:00.910765129Z [DBUG]  ts="2026-07-20T04:07:00.874944Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="ccab54b7467c44cb926d160f8d051bfd" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:00.910774169Z [INFO]  ts="2026-07-20T04:07:00.882787Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="ccab54b7467c44cb926d160f8d051bfd" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34164 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35812 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:00.910786359Z [DBUG]  ts="2026-07-20T04:07:00.895796Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="ccab54b7467c44cb926d160f8d051bfd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34482 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:06.200431543Z [DBUG]  ts="2026-07-20T04:07:06.135799Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="96473f8597a1429086107b5ed0db5ee8" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34398 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.200437483Z [INFO]  ts="2026-07-20T04:07:06.146024Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="96473f8597a1429086107b5ed0db5ee8" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34408 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:06.200445193Z [DBUG]  ts="2026-07-20T04:07:06.151358Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="96473f8597a1429086107b5ed0db5ee8" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38534 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:06.261814244Z [DBUG]  ts="2026-07-20T04:07:06.257636Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="3a953c32c6f341a386c69d60c2f43581" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:06.269786839Z [DBUG]  ts="2026-07-20T04:07:06.264532Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="2d414247f3b746b39e392f1a4d392d9e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34398 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.269795099Z [INFO]  ts="2026-07-20T04:07:06.267197Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="3a953c32c6f341a386c69d60c2f43581" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34422 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.274935113Z [INFO]  ts="2026-07-20T04:07:06.271195Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="2d414247f3b746b39e392f1a4d392d9e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34434 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:06.274947133Z [DBUG]  ts="2026-07-20T04:07:06.272695Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="3a953c32c6f341a386c69d60c2f43581" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38534 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34450 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36538 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:06.279928197Z [DBUG]  ts="2026-07-20T04:07:06.276174Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="2d414247f3b746b39e392f1a4d392d9e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38550 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:06.282600099Z [DBUG]  ts="2026-07-20T04:07:06.281229Z" fields={"method":"GET","path":"/agent/workspace/tree","minted":true} service="gateway" trace_id="d9592fa228fb4a9ab719768abd24b48b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34398 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.292044874Z [INFO]  ts="2026-07-20T04:07:06.287611Z" fields={"method":"GET","path":"/agent/workspace/tree"} service="gateway" trace_id="d9592fa228fb4a9ab719768abd24b48b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34462 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "GET /api/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:07:06.299267963Z [DBUG]  ts="2026-07-20T04:07:06.294740Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/tree","downstream_status":200} service="gateway" trace_id="d9592fa228fb4a9ab719768abd24b48b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38534 - "GET /agent/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:07:06.391339359Z [DBUG]  ts="2026-07-20T04:07:06.383868Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="4c323f373e8d4ef5a0f3bcdd84edd632" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34398 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.405913957Z [INFO]  ts="2026-07-20T04:07:06.400414Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="4c323f373e8d4ef5a0f3bcdd84edd632" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34476 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:06.417627975Z [DBUG]  ts="2026-07-20T04:07:06.415841Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="4c323f373e8d4ef5a0f3bcdd84edd632" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38534 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:06.768758330Z [DBUG]  ts="2026-07-20T04:07:06.751733Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="6a24540559cc40bc88bc175ce4378f69" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34398 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.768764729Z [INFO]  ts="2026-07-20T04:07:06.759609Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="6a24540559cc40bc88bc175ce4378f69" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34484 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:06.768773649Z [DBUG]  ts="2026-07-20T04:07:06.763946Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="6a24540559cc40bc88bc175ce4378f69" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38534 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:06.879637305Z [DBUG]  ts="2026-07-20T04:07:06.874937Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="82597dc6782f48bbbc4c37d337165b1d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34398 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:06.895530743Z [INFO]  ts="2026-07-20T04:07:06.891639Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="82597dc6782f48bbbc4c37d337165b1d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34492 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:06.905780922Z [DBUG]  ts="2026-07-20T04:07:06.901256Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="82597dc6782f48bbbc4c37d337165b1d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38534 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:12.251593809Z [DBUG]  ts="2026-07-20T04:07:12.248276Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="a875b3e31e854642b8a1bb000027b086" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34498 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:12.256638704Z [INFO]  ts="2026-07-20T04:07:12.255654Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="a875b3e31e854642b8a1bb000027b086" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34510 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36542 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:12.261615879Z [DBUG]  ts="2026-07-20T04:07:12.260602Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="a875b3e31e854642b8a1bb000027b086" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38558 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:12.407681337Z [DBUG]  ts="2026-07-20T04:07:12.375692Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="fd9abc6bcd084409a2fafa662959de3c" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:12.407685077Z [DBUG]  ts="2026-07-20T04:07:12.383592Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="b1d13cac716b4bbd82eaddd8b1f22458" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34498 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:12.407693177Z [INFO]  ts="2026-07-20T04:07:12.388610Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="fd9abc6bcd084409a2fafa662959de3c" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34534 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34526 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:12.407705547Z [INFO]  ts="2026-07-20T04:07:12.394265Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="b1d13cac716b4bbd82eaddd8b1f22458" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36542 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:12.407712117Z [DBUG]  ts="2026-07-20T04:07:12.395650Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="fd9abc6bcd084409a2fafa662959de3c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38558 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34538 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36556 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:12.408170364Z [DBUG]  ts="2026-07-20T04:07:12.398075Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="b1d13cac716b4bbd82eaddd8b1f22458" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38572 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:12.896740238Z [DBUG]  ts="2026-07-20T04:07:12.895375Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="95579d591d0b409a9f5f74a6116f7eec" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:12.897084285Z [DBUG]  ts="2026-07-20T04:07:12.896548Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="7fe6ac47fc9942c99e3a3a2f16b5c54e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34526 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:12.908140487Z [INFO]  ts="2026-07-20T04:07:12.902847Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="7fe6ac47fc9942c99e3a3a2f16b5c54e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34498 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:12.908147287Z [INFO]  ts="2026-07-20T04:07:12.904392Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="95579d591d0b409a9f5f74a6116f7eec" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34540 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34542 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36542 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:12.908161257Z [DBUG]  ts="2026-07-20T04:07:12.907561Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="7fe6ac47fc9942c99e3a3a2f16b5c54e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36556 - "GET /api/workspace/git HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38572 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:12.908965362Z [DBUG]  ts="2026-07-20T04:07:12.908148Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="95579d591d0b409a9f5f74a6116f7eec" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38558 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:13.049825157Z [DBUG]  ts="2026-07-20T04:07:13.026346Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="1fc537070f4541a8ad2400dabb481903" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34498 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:13.049837707Z [INFO]  ts="2026-07-20T04:07:13.033893Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="1fc537070f4541a8ad2400dabb481903" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34552 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36542 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:13.049850017Z [DBUG]  ts="2026-07-20T04:07:13.041144Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="1fc537070f4541a8ad2400dabb481903" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38558 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:18.143763561Z [DBUG]  ts="2026-07-20T04:07:18.133545Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="dcb077d331c045e9a5a9ce51ad9db79d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34226 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:18.145902836Z [INFO]  ts="2026-07-20T04:07:18.143444Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="dcb077d331c045e9a5a9ce51ad9db79d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34242 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:18.151303879Z [DBUG]  ts="2026-07-20T04:07:18.149592Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="dcb077d331c045e9a5a9ce51ad9db79d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35816 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:18.262038434Z [DBUG]  ts="2026-07-20T04:07:18.257761Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="97d49a4629f146d3bb5522b03d2e2e8d" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:18.266539473Z [DBUG]  ts="2026-07-20T04:07:18.262794Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="329192711e1e47ad92b7c8db395d3ca8" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34226 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:18.266548483Z [INFO]  ts="2026-07-20T04:07:18.265035Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="97d49a4629f146d3bb5522b03d2e2e8d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34266 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34250 - "POST /internal/validate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:18.271320029Z [INFO]  ts="2026-07-20T04:07:18.270495Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="329192711e1e47ad92b7c8db395d3ca8" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:07:18.272341312Z [DBUG]  ts="2026-07-20T04:07:18.271181Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="97d49a4629f146d3bb5522b03d2e2e8d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35816 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34270 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:18.276657752Z [DBUG]  ts="2026-07-20T04:07:18.275949Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="329192711e1e47ad92b7c8db395d3ca8" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35820 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:18.391821657Z [DBUG]  ts="2026-07-20T04:07:18.390809Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="f5c2d0a1e4674b20a51712e75e3836b5" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34226 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:18.403739893Z [INFO]  ts="2026-07-20T04:07:18.402650Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="f5c2d0a1e4674b20a51712e75e3836b5" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34274 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:18.408514930Z [DBUG]  ts="2026-07-20T04:07:18.407176Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="f5c2d0a1e4674b20a51712e75e3836b5" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35816 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:18.843273859Z [DBUG]  ts="2026-07-20T04:07:18.750133Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="3c55989123194bafbdbe7d646015b488" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34226 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:18.843279429Z [INFO]  ts="2026-07-20T04:07:18.756836Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="3c55989123194bafbdbe7d646015b488" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34288 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:18.843288789Z [DBUG]  ts="2026-07-20T04:07:18.761503Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="3c55989123194bafbdbe7d646015b488" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35816 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:18.843294239Z [DBUG]  ts="2026-07-20T04:07:18.834303Z" fields={"method":"GET","path":"/agent/workspace/tree","minted":true} service="gateway" trace_id="d7e24db657c14d9abd553ecd536b877c" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34226 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:18.848124245Z [INFO]  ts="2026-07-20T04:07:18.844869Z" fields={"method":"GET","path":"/agent/workspace/tree"} service="gateway" trace_id="d7e24db657c14d9abd553ecd536b877c" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34302 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:07:18.852516674Z [DBUG]  ts="2026-07-20T04:07:18.849786Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/tree","downstream_status":200} service="gateway" trace_id="d7e24db657c14d9abd553ecd536b877c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35816 - "GET /agent/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:07:18.896550406Z [DBUG]  ts="2026-07-20T04:07:18.873090Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="950ca636f7e24d309284657d47afca85" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34226 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:18.896559306Z [INFO]  ts="2026-07-20T04:07:18.879725Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="950ca636f7e24d309284657d47afca85" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34312 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33700 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:18.896571706Z [DBUG]  ts="2026-07-20T04:07:18.888820Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="950ca636f7e24d309284657d47afca85" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35816 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:24.149767723Z [DBUG]  ts="2026-07-20T04:07:24.136462Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="956b0b4e5a37413b9b3a19e379bdb196" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34322 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.153510627Z [INFO]  ts="2026-07-20T04:07:24.151241Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="956b0b4e5a37413b9b3a19e379bdb196" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34330 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:24.163358918Z [DBUG]  ts="2026-07-20T04:07:24.157406Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="956b0b4e5a37413b9b3a19e379bdb196" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35832 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:24.251566061Z [DBUG]  ts="2026-07-20T04:07:24.244166Z" fields={"method":"GET","path":"/agent/workspace/tree","minted":true} service="gateway" trace_id="b9a3aadd864a460e92339e38fdd97297" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34322 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.251572871Z [INFO]  ts="2026-07-20T04:07:24.251008Z" fields={"method":"GET","path":"/agent/workspace/tree"} service="gateway" trace_id="b9a3aadd864a460e92339e38fdd97297" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34338 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:07:24.256406887Z [DBUG]  ts="2026-07-20T04:07:24.255582Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/tree","downstream_status":200} service="gateway" trace_id="b9a3aadd864a460e92339e38fdd97297" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35832 - "GET /agent/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:07:24.271447591Z [DBUG]  ts="2026-07-20T04:07:24.265616Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="c1ff5a739ba94cdfba99dea552c82449" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34322 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.272039058Z [DBUG]  ts="2026-07-20T04:07:24.271483Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="e7fea22aed91495e8ae934360d89cb12" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:24.277113072Z [INFO]  ts="2026-07-20T04:07:24.272525Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="c1ff5a739ba94cdfba99dea552c82449" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34356 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:24.279250927Z [DBUG]  ts="2026-07-20T04:07:24.276960Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="c1ff5a739ba94cdfba99dea552c82449" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35832 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34348 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.279262387Z [INFO]  ts="2026-07-20T04:07:24.278082Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="e7fea22aed91495e8ae934360d89cb12" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34368 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:24.291695090Z [DBUG]  ts="2026-07-20T04:07:24.282129Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="e7fea22aed91495e8ae934360d89cb12" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35842 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:24.443496539Z [DBUG]  ts="2026-07-20T04:07:24.408546Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="8ab3217b0723453ab36202249ec2493a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35832 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:24.443512068Z [DBUG]  ts="2026-07-20T04:07:24.395567Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="8ab3217b0723453ab36202249ec2493a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34322 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.443518018Z [INFO]  ts="2026-07-20T04:07:24.404067Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="8ab3217b0723453ab36202249ec2493a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34382 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:24.877748161Z [DBUG]  ts="2026-07-20T04:07:24.768765Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="35fcb90eb2534807b47b161235077762" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34322 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.877762281Z [INFO]  ts="2026-07-20T04:07:24.775436Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="35fcb90eb2534807b47b161235077762" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:34396 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:24.877775651Z [DBUG]  ts="2026-07-20T04:07:24.780403Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="35fcb90eb2534807b47b161235077762" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35832 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:24.901711253Z [DBUG]  ts="2026-07-20T04:07:24.895354Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="d27a4262f42444109d38ec20631e6002" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:34322 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:24.902691016Z [INFO]  ts="2026-07-20T04:07:24.902029Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="d27a4262f42444109d38ec20631e6002" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:07:24.907717421Z [DBUG]  ts="2026-07-20T04:07:24.906024Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="d27a4262f42444109d38ec20631e6002" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:35832 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34412 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33716 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:30.144563178Z [DBUG]  ts="2026-07-20T04:07:30.134439Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="3310c91015684eecae944b776296b777" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37918 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:30.144570678Z [INFO]  ts="2026-07-20T04:07:30.142124Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="3310c91015684eecae944b776296b777" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37926 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:30.149271804Z [DBUG]  ts="2026-07-20T04:07:30.147459Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="3310c91015684eecae944b776296b777" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34232 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:30.257080190Z [DBUG]  ts="2026-07-20T04:07:30.253458Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="b6c555d3d13444de8a0d15617682a84d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37918 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:30.261564849Z [INFO]  ts="2026-07-20T04:07:30.260152Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="b6c555d3d13444de8a0d15617682a84d" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:07:30.261568449Z [DBUG]  ts="2026-07-20T04:07:30.260505Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="f618fe220a954a3190ff6a724fa1e63a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37940 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:30.267657826Z [DBUG]  ts="2026-07-20T04:07:30.265314Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="b6c555d3d13444de8a0d15617682a84d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34232 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37918 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:30.267665976Z [INFO]  ts="2026-07-20T04:07:30.266017Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="f618fe220a954a3190ff6a724fa1e63a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37952 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:30.272437363Z [DBUG]  ts="2026-07-20T04:07:30.269268Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="f618fe220a954a3190ff6a724fa1e63a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34244 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:30.409668182Z [DBUG]  ts="2026-07-20T04:07:30.379362Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="0889e8d0245c4931a63f16060a52e712" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37918 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:30.409676332Z [INFO]  ts="2026-07-20T04:07:30.391827Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="0889e8d0245c4931a63f16060a52e712" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37958 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:30.409689132Z [DBUG]  ts="2026-07-20T04:07:30.398926Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="0889e8d0245c4931a63f16060a52e712" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34232 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:30.751635831Z [DBUG]  ts="2026-07-20T04:07:30.750452Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="9e814bdb061347d5a9cc007455754f82" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37918 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:30.763176429Z [INFO]  ts="2026-07-20T04:07:30.757660Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="9e814bdb061347d5a9cc007455754f82" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37962 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:30.763188449Z [DBUG]  ts="2026-07-20T04:07:30.762219Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="9e814bdb061347d5a9cc007455754f82" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34232 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:30.927702799Z [DBUG]  ts="2026-07-20T04:07:30.873325Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="bfed0889d5e948b1bfd38b7ea40b7812" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37918 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:30.927709649Z [INFO]  ts="2026-07-20T04:07:30.880629Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="bfed0889d5e948b1bfd38b7ea40b7812" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37970 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33938 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:30.927719989Z [DBUG]  ts="2026-07-20T04:07:30.887945Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="bfed0889d5e948b1bfd38b7ea40b7812" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34232 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:36.133073651Z [DBUG]  ts="2026-07-20T04:07:36.131954Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="a9eea5f8a70e442aad5b782ce1a0532b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35984 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:36.147924627Z [INFO]  ts="2026-07-20T04:07:36.142461Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="a9eea5f8a70e442aad5b782ce1a0532b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35996 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37938 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:36.151178054Z [DBUG]  ts="2026-07-20T04:07:36.147594Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="a9eea5f8a70e442aad5b782ce1a0532b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34164 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:36.271034386Z [DBUG]  ts="2026-07-20T04:07:36.256446Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="3815f677e7da4f318b216ccc9f73bebc" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:36.271040186Z [DBUG]  ts="2026-07-20T04:07:36.259336Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="ee02896334d04550b8425ebcd924edc2" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35984 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:36.271046956Z [INFO]  ts="2026-07-20T04:07:36.264585Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="3815f677e7da4f318b216ccc9f73bebc" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36006 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:36.271052986Z [INFO]  ts="2026-07-20T04:07:36.267208Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="ee02896334d04550b8425ebcd924edc2" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36016 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37938 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:36.282482055Z [DBUG]  ts="2026-07-20T04:07:36.278785Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="3815f677e7da4f318b216ccc9f73bebc" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34164 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36028 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37946 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:36.286167710Z [DBUG]  ts="2026-07-20T04:07:36.284848Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="ee02896334d04550b8425ebcd924edc2" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34180 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:36.398909721Z [DBUG]  ts="2026-07-20T04:07:36.391579Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="0f0c3109b52d4992b9d7fec297f6217d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35984 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:36.399417277Z [INFO]  ts="2026-07-20T04:07:36.398731Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="0f0c3109b52d4992b9d7fec297f6217d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36030 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37938 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:36.404740181Z [DBUG]  ts="2026-07-20T04:07:36.403020Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="0f0c3109b52d4992b9d7fec297f6217d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34164 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:36.754405643Z [DBUG]  ts="2026-07-20T04:07:36.751930Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="4ff6eaf6dcf24a189dcfff586b5e79b7" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35984 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:36.760023835Z [INFO]  ts="2026-07-20T04:07:36.758291Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="4ff6eaf6dcf24a189dcfff586b5e79b7" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36038 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37938 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:36.764891561Z [DBUG]  ts="2026-07-20T04:07:36.762726Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="4ff6eaf6dcf24a189dcfff586b5e79b7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34164 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:37.208518877Z [DBUG]  ts="2026-07-20T04:07:37.014419Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="2506de685fef40c3b043af3c07ac13c8" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35984 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:37.208524667Z [INFO]  ts="2026-07-20T04:07:37.028077Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="2506de685fef40c3b043af3c07ac13c8" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36054 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37938 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:37.208534017Z [DBUG]  ts="2026-07-20T04:07:37.032673Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="2506de685fef40c3b043af3c07ac13c8" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34164 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:42.259933342Z [DBUG]  ts="2026-07-20T04:07:42.219066Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="4b2305badf5c4bbaa40123b209b5611a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:42.259943522Z [INFO]  ts="2026-07-20T04:07:42.226772Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="4b2305badf5c4bbaa40123b209b5611a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36074 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:42.259953992Z [DBUG]  ts="2026-07-20T04:07:42.232402Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="4b2305badf5c4bbaa40123b209b5611a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34194 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:42.423730275Z [DBUG]  ts="2026-07-20T04:07:42.399121Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="8f5f284137a842e883bb72bd6be57fba" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:42.423737015Z [INFO]  ts="2026-07-20T04:07:42.407095Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="8f5f284137a842e883bb72bd6be57fba" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36088 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:42.423745845Z [DBUG]  ts="2026-07-20T04:07:42.412472Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="8f5f284137a842e883bb72bd6be57fba" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34194 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:43.788876643Z [DBUG]  ts="2026-07-20T04:07:43.721953Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="af0ad15eeb5549adb9d4f7f470e932d3" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:43.788885453Z [INFO]  ts="2026-07-20T04:07:43.732142Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="af0ad15eeb5549adb9d4f7f470e932d3" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36102 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:43.788897253Z [DBUG]  ts="2026-07-20T04:07:43.740155Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="af0ad15eeb5549adb9d4f7f470e932d3" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34194 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:43.895895014Z [DBUG]  ts="2026-07-20T04:07:43.858377Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="bab0eeaf998a4a4986110ab7d4b4aa18" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:43.895906004Z [INFO]  ts="2026-07-20T04:07:43.865066Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="bab0eeaf998a4a4986110ab7d4b4aa18" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36108 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:43.895918764Z [DBUG]  ts="2026-07-20T04:07:43.869675Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="bab0eeaf998a4a4986110ab7d4b4aa18" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34194 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:43.895927434Z [DBUG]  ts="2026-07-20T04:07:43.889530Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="233f89cea0ec48a2b728b33b5a5afd5f" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:43.902201650Z [INFO]  ts="2026-07-20T04:07:43.901256Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="233f89cea0ec48a2b728b33b5a5afd5f" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36110 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:43.907005847Z [DBUG]  ts="2026-07-20T04:07:43.906310Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="233f89cea0ec48a2b728b33b5a5afd5f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34194 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:44.029456729Z [DBUG]  ts="2026-07-20T04:07:44.013060Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="2b660861f8e5484f968a0b1445a7050f" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:44.029465499Z [INFO]  ts="2026-07-20T04:07:44.021962Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="2b660861f8e5484f968a0b1445a7050f" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36112 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:44.029483179Z [DBUG]  ts="2026-07-20T04:07:44.027032Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="2b660861f8e5484f968a0b1445a7050f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34194 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276204001Z [DBUG]  ts="2026-07-20T04:07:48.152733Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="a3223f2afb384982a9f12bff3db2fbb9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34964 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276213151Z [DBUG]  ts="2026-07-20T04:07:48.258217Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="fc87cf78c48d4f6181461d21c2da75cd" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276221111Z [DBUG]  ts="2026-07-20T04:07:48.264990Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="594ccb27c3024d46bd5dcdeb94aa73d9" audience="system" event="request_received" span="edge"
+2026-07-20T04:07:48.276275750Z [DBUG]  ts="2026-07-20T04:07:48.135096Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="a3223f2afb384982a9f12bff3db2fbb9" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276284100Z [INFO]  ts="2026-07-20T04:07:48.146534Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="a3223f2afb384982a9f12bff3db2fbb9" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35696 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276437009Z [INFO]  ts="2026-07-20T04:07:48.266159Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="fc87cf78c48d4f6181461d21c2da75cd" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35704 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276446050Z [DBUG]  ts="2026-07-20T04:07:48.270856Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="fc87cf78c48d4f6181461d21c2da75cd" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34964 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35702 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:48.276454260Z [INFO]  ts="2026-07-20T04:07:48.271898Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="594ccb27c3024d46bd5dcdeb94aa73d9" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35710 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:48.277116645Z [DBUG]  ts="2026-07-20T04:07:48.275769Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="594ccb27c3024d46bd5dcdeb94aa73d9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34966 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:48.398917343Z [DBUG]  ts="2026-07-20T04:07:48.387440Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="e86868ab09d444499cdae9036c721b1b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:48.398926213Z [INFO]  ts="2026-07-20T04:07:48.397257Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="e86868ab09d444499cdae9036c721b1b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35722 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:48.403087294Z [DBUG]  ts="2026-07-20T04:07:48.401839Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="e86868ab09d444499cdae9036c721b1b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34964 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:48.760865579Z [DBUG]  ts="2026-07-20T04:07:48.752107Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="d58e1e87933f4cfabf28f94d2700346b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:48.760873259Z [INFO]  ts="2026-07-20T04:07:48.759268Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="d58e1e87933f4cfabf28f94d2700346b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35734 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:48.765907864Z [DBUG]  ts="2026-07-20T04:07:48.764581Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="d58e1e87933f4cfabf28f94d2700346b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34964 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:48.910138265Z [DBUG]  ts="2026-07-20T04:07:48.874695Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="bde8bf8e557949d8b68653261ba4ff30" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36066 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:48.910150895Z [INFO]  ts="2026-07-20T04:07:48.882091Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="bde8bf8e557949d8b68653261ba4ff30" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35748 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37960 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:48.910166245Z [DBUG]  ts="2026-07-20T04:07:48.893345Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="bde8bf8e557949d8b68653261ba4ff30" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34964 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:54.148074057Z [DBUG]  ts="2026-07-20T04:07:54.136976Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="3b1760fd109f4018894c5853a93e0a5c" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35758 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:54.153729767Z [INFO]  ts="2026-07-20T04:07:54.149486Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="3b1760fd109f4018894c5853a93e0a5c" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35770 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:54.158203615Z [DBUG]  ts="2026-07-20T04:07:54.155970Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="3b1760fd109f4018894c5853a93e0a5c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34978 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:54.263186121Z [DBUG]  ts="2026-07-20T04:07:54.261054Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="cdaea0b76172464088b1aa5cb6eb9590" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35758 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:54.267495451Z [INFO]  ts="2026-07-20T04:07:54.266987Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="cdaea0b76172464088b1aa5cb6eb9590" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:07:54.271577003Z [DBUG]  ts="2026-07-20T04:07:54.269730Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="f6fb706a2a41451bb5e4e63804f9d37a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35776 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:54.272592895Z [DBUG]  ts="2026-07-20T04:07:54.271963Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="cdaea0b76172464088b1aa5cb6eb9590" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34978 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35758 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:54.276859016Z [INFO]  ts="2026-07-20T04:07:54.274677Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="f6fb706a2a41451bb5e4e63804f9d37a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35788 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:54.281030346Z [DBUG]  ts="2026-07-20T04:07:54.279221Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="f6fb706a2a41451bb5e4e63804f9d37a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34992 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:54.472582335Z [DBUG]  ts="2026-07-20T04:07:54.389492Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="a4d29125e26b4b359c0c81b867b7a9b4" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35758 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:54.472591475Z [INFO]  ts="2026-07-20T04:07:54.401612Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="a4d29125e26b4b359c0c81b867b7a9b4" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35802 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:54.472605895Z [DBUG]  ts="2026-07-20T04:07:54.406407Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="a4d29125e26b4b359c0c81b867b7a9b4" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34978 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:54.753749397Z [DBUG]  ts="2026-07-20T04:07:54.748781Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="8a95558fb7b64339a18df28909c81d7a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35758 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:54.760449851Z [INFO]  ts="2026-07-20T04:07:54.755756Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="8a95558fb7b64339a18df28909c81d7a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35808 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:54.761575872Z [DBUG]  ts="2026-07-20T04:07:54.760873Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="8a95558fb7b64339a18df28909c81d7a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34978 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:07:54.911331005Z [DBUG]  ts="2026-07-20T04:07:54.872040Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="ba1b9fa25df54b7f80fdece540b44a2e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35758 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:07:54.911364905Z [INFO]  ts="2026-07-20T04:07:54.878967Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="ba1b9fa25df54b7f80fdece540b44a2e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35818 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:07:54.911388044Z [DBUG]  ts="2026-07-20T04:07:54.883326Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="ba1b9fa25df54b7f80fdece540b44a2e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34978 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:00.146527471Z [DBUG]  ts="2026-07-20T04:08:00.141444Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="23cdfadc16fb452ba3354111f12b533a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35628 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:00.153299094Z [INFO]  ts="2026-07-20T04:08:00.151013Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="23cdfadc16fb452ba3354111f12b533a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35634 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37030 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:00.158197980Z [DBUG]  ts="2026-07-20T04:08:00.156560Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="23cdfadc16fb452ba3354111f12b533a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38516 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:00.263552972Z [DBUG]  ts="2026-07-20T04:08:00.262321Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="490c33f9e74648ba8c6f8e71629d6886" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35628 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:00.277059348Z [INFO]  ts="2026-07-20T04:08:00.270089Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="490c33f9e74648ba8c6f8e71629d6886" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:08:00.277062818Z [DBUG]  ts="2026-07-20T04:08:00.270492Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="fe4f31145dc841d69be4f573f10e37e7" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35644 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37030 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:00.283402634Z [DBUG]  ts="2026-07-20T04:08:00.276538Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="490c33f9e74648ba8c6f8e71629d6886" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38516 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35628 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:00.283420954Z [INFO]  ts="2026-07-20T04:08:00.277192Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="fe4f31145dc841d69be4f573f10e37e7" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35646 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37030 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:00.283434524Z [DBUG]  ts="2026-07-20T04:08:00.281073Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="fe4f31145dc841d69be4f573f10e37e7" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38524 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:00.499169653Z [DBUG]  ts="2026-07-20T04:08:00.394177Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="e67c4856ddfc4d04ab2232b0968c7ec2" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35628 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:00.499175882Z [INFO]  ts="2026-07-20T04:08:00.402086Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="e67c4856ddfc4d04ab2232b0968c7ec2" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35658 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37030 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:00.499184652Z [DBUG]  ts="2026-07-20T04:08:00.406439Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="e67c4856ddfc4d04ab2232b0968c7ec2" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38516 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:00.763942740Z [DBUG]  ts="2026-07-20T04:08:00.749702Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="2e4a97816fb047bc9482a881a92bdb4e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35628 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:00.763948210Z [INFO]  ts="2026-07-20T04:08:00.757283Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="2e4a97816fb047bc9482a881a92bdb4e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35660 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37030 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:00.763958230Z [DBUG]  ts="2026-07-20T04:08:00.761863Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="2e4a97816fb047bc9482a881a92bdb4e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38516 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:00.902385261Z [DBUG]  ts="2026-07-20T04:08:00.872634Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="ea527b0b19554ef18fbda3496321aa37" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35628 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:00.902392771Z [INFO]  ts="2026-07-20T04:08:00.878861Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="ea527b0b19554ef18fbda3496321aa37" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35666 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37030 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:00.902404821Z [DBUG]  ts="2026-07-20T04:08:00.883829Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="ea527b0b19554ef18fbda3496321aa37" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:38516 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:06.144466825Z [DBUG]  ts="2026-07-20T04:08:06.135629Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="1da07dcb32024689b6e9e29d0152d43e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:06.149348521Z [INFO]  ts="2026-07-20T04:08:06.147152Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="1da07dcb32024689b6e9e29d0152d43e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36714 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:06.154503005Z [DBUG]  ts="2026-07-20T04:08:06.152408Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="1da07dcb32024689b6e9e29d0152d43e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:06.269307831Z [DBUG]  ts="2026-07-20T04:08:06.257078Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="fb9efd49aa0f4ba8a78de48f3c2e2273" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:06.269315382Z [INFO]  ts="2026-07-20T04:08:06.263091Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="fb9efd49aa0f4ba8a78de48f3c2e2273" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:08:06.269317872Z [DBUG]  ts="2026-07-20T04:08:06.263464Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="8fdcd2b060454c74bf7950ff01ec41e1" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36718 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:06.269327812Z [DBUG]  ts="2026-07-20T04:08:06.268541Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="fb9efd49aa0f4ba8a78de48f3c2e2273" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:08:06.269931107Z [INFO]  ts="2026-07-20T04:08:06.268923Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="8fdcd2b060454c74bf7950ff01ec41e1" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36722 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:06.274956042Z [DBUG]  ts="2026-07-20T04:08:06.272685Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="8fdcd2b060454c74bf7950ff01ec41e1" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36768 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:06.288186469Z [DBUG]  ts="2026-07-20T04:08:06.287008Z" fields={"method":"GET","path":"/agent/workspace/tree","minted":true} service="gateway" trace_id="eda48f3e2b984b26b8c80e8d168aab9c" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:06.296374272Z [INFO]  ts="2026-07-20T04:08:06.292575Z" fields={"method":"GET","path":"/agent/workspace/tree"} service="gateway" trace_id="eda48f3e2b984b26b8c80e8d168aab9c" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36736 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:08:06.299108233Z [DBUG]  ts="2026-07-20T04:08:06.297999Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/tree","downstream_status":200} service="gateway" trace_id="eda48f3e2b984b26b8c80e8d168aab9c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:08:06.391902304Z [DBUG]  ts="2026-07-20T04:08:06.382878Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="8a6a7138bf264cb2a02c756582079c4a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:06.391911144Z [INFO]  ts="2026-07-20T04:08:06.391244Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="8a6a7138bf264cb2a02c756582079c4a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36740 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:06.397271276Z [DBUG]  ts="2026-07-20T04:08:06.395436Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="8a6a7138bf264cb2a02c756582079c4a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:08.671365216Z [DBUG]  ts="2026-07-20T04:08:08.531213Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="aac36aaef3e243d79d02e4213875bfed" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:08.671373356Z [INFO]  ts="2026-07-20T04:08:08.539955Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="aac36aaef3e243d79d02e4213875bfed" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36756 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:08.671384766Z [DBUG]  ts="2026-07-20T04:08:08.544910Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="aac36aaef3e243d79d02e4213875bfed" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:08.825014520Z [DBUG]  ts="2026-07-20T04:08:08.823261Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="9ad21db12fc14d8e8523780e8c3ae961" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:08.836920016Z [INFO]  ts="2026-07-20T04:08:08.831101Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="9ad21db12fc14d8e8523780e8c3ae961" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36766 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:08.838556735Z [DBUG]  ts="2026-07-20T04:08:08.836572Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="9ad21db12fc14d8e8523780e8c3ae961" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:12.141445261Z [DBUG]  ts="2026-07-20T04:08:12.134279Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="8b0fc8a18f824a1e81d1194714cdfd8a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:12.145745501Z [INFO]  ts="2026-07-20T04:08:12.142812Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="8b0fc8a18f824a1e81d1194714cdfd8a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36772 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:12.151130563Z [DBUG]  ts="2026-07-20T04:08:12.148658Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="8b0fc8a18f824a1e81d1194714cdfd8a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:12.260283369Z [DBUG]  ts="2026-07-20T04:08:12.255198Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="f3721505eeb24b2aa62d9632206d9cff" audience="system" event="request_received" span="edge"
+2026-07-20T04:08:12.265446003Z [DBUG]  ts="2026-07-20T04:08:12.262051Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="733bccd23cb44c39925e58cbee125c21" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:12.265452943Z [INFO]  ts="2026-07-20T04:08:12.263150Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="f3721505eeb24b2aa62d9632206d9cff" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36794 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:12.270031832Z [DBUG]  ts="2026-07-20T04:08:12.269041Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="f3721505eeb24b2aa62d9632206d9cff" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36778 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:12.274433730Z [INFO]  ts="2026-07-20T04:08:12.270689Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="733bccd23cb44c39925e58cbee125c21" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36804 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:12.274955837Z [DBUG]  ts="2026-07-20T04:08:12.274121Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="733bccd23cb44c39925e58cbee125c21" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36780 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:12.388657581Z [DBUG]  ts="2026-07-20T04:08:12.379535Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="d245685db698497dbfdc68bbac790623" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:12.388665890Z [INFO]  ts="2026-07-20T04:08:12.388110Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="d245685db698497dbfdc68bbac790623" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36814 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:12.397015343Z [DBUG]  ts="2026-07-20T04:08:12.393808Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="d245685db698497dbfdc68bbac790623" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:12.751963838Z [DBUG]  ts="2026-07-20T04:08:12.745291Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="e063e81e8863449d9fbcbad56ead4b3b" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:12.756413966Z [INFO]  ts="2026-07-20T04:08:12.753291Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="e063e81e8863449d9fbcbad56ead4b3b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36830 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:12.757631917Z [DBUG]  ts="2026-07-20T04:08:12.757306Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="e063e81e8863449d9fbcbad56ead4b3b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:12.880424527Z [DBUG]  ts="2026-07-20T04:08:12.870317Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="0b2144e9dc654347917cc2c96fd1920f" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:36712 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:12.880440207Z [INFO]  ts="2026-07-20T04:08:12.876825Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="0b2144e9dc654347917cc2c96fd1920f" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36842 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37032 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:12.883637695Z [DBUG]  ts="2026-07-20T04:08:12.882655Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="0b2144e9dc654347917cc2c96fd1920f" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:36766 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:18.133378929Z [DBUG]  ts="2026-07-20T04:08:18.127806Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="802b92f7992f4688b406df89bc524c48" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.140630917Z [INFO]  ts="2026-07-20T04:08:18.139074Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="802b92f7992f4688b406df89bc524c48" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37128 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:18.147722918Z [DBUG]  ts="2026-07-20T04:08:18.144964Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="802b92f7992f4688b406df89bc524c48" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33924 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:18.253211309Z [DBUG]  ts="2026-07-20T04:08:18.251663Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="089934ac9e8846fe93fba5086542b56e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.263762896Z [DBUG]  ts="2026-07-20T04:08:18.259696Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="3e0edb51aabc4547bbc2a881609cd7a5" audience="system" event="request_received" span="edge"
+2026-07-20T04:08:18.263768256Z [INFO]  ts="2026-07-20T04:08:18.259905Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="089934ac9e8846fe93fba5086542b56e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37134 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.268686271Z [DBUG]  ts="2026-07-20T04:08:18.265463Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="089934ac9e8846fe93fba5086542b56e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+2026-07-20T04:08:18.268688831Z [INFO]  ts="2026-07-20T04:08:18.265852Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="3e0edb51aabc4547bbc2a881609cd7a5" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:33924 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37136 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:18.272814482Z [DBUG]  ts="2026-07-20T04:08:18.270212Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="3e0edb51aabc4547bbc2a881609cd7a5" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33936 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:18.381009214Z [DBUG]  ts="2026-07-20T04:08:18.379424Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="f2926d9d130d4f09af5e679a2898e109" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.395074066Z [INFO]  ts="2026-07-20T04:08:18.392124Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="f2926d9d130d4f09af5e679a2898e109" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37148 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:18.400455568Z [DBUG]  ts="2026-07-20T04:08:18.397042Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="f2926d9d130d4f09af5e679a2898e109" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33924 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:18.796881602Z [DBUG]  ts="2026-07-20T04:08:18.773011Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="b84a1f810e7449d699331dd64a0f4958" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.796887902Z [INFO]  ts="2026-07-20T04:08:18.779864Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="b84a1f810e7449d699331dd64a0f4958" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37162 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:18.796897562Z [DBUG]  ts="2026-07-20T04:08:18.792357Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="b84a1f810e7449d699331dd64a0f4958" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33924 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:18.846701183Z [DBUG]  ts="2026-07-20T04:08:18.845503Z" fields={"method":"GET","path":"/agent/workspace/tree","minted":true} service="gateway" trace_id="f7938f8c17a94aaeaa7e408d92855482" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.859090577Z [INFO]  ts="2026-07-20T04:08:18.853732Z" fields={"method":"GET","path":"/agent/workspace/tree"} service="gateway" trace_id="f7938f8c17a94aaeaa7e408d92855482" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37164 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:08:18.861738558Z [DBUG]  ts="2026-07-20T04:08:18.861026Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/tree","downstream_status":200} service="gateway" trace_id="f7938f8c17a94aaeaa7e408d92855482" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33924 - "GET /agent/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:08:18.907729446Z [DBUG]  ts="2026-07-20T04:08:18.905855Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="b715851453ee4574b5f6f2008417f035" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37124 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:18.921118262Z [INFO]  ts="2026-07-20T04:08:18.916430Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="b715851453ee4574b5f6f2008417f035" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37172 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35330 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:18.922345684Z [DBUG]  ts="2026-07-20T04:08:18.921831Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="b715851453ee4574b5f6f2008417f035" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33924 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:24.141103810Z [DBUG]  ts="2026-07-20T04:08:24.136205Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="ec4827c932b04c8fb6f6b3dbf600e1a4" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37176 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.151724206Z [INFO]  ts="2026-07-20T04:08:24.145993Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="ec4827c932b04c8fb6f6b3dbf600e1a4" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37180 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:24.151737996Z [DBUG]  ts="2026-07-20T04:08:24.150523Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="ec4827c932b04c8fb6f6b3dbf600e1a4" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33950 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:24.251878085Z [DBUG]  ts="2026-07-20T04:08:24.246158Z" fields={"method":"GET","path":"/agent/workspace/tree","minted":true} service="gateway" trace_id="16259acc7d064f1f8c5ee3055e62a1a9" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37176 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.256323733Z [INFO]  ts="2026-07-20T04:08:24.252948Z" fields={"method":"GET","path":"/agent/workspace/tree"} service="gateway" trace_id="16259acc7d064f1f8c5ee3055e62a1a9" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37186 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:08:24.258432959Z [DBUG]  ts="2026-07-20T04:08:24.257577Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/tree","downstream_status":200} service="gateway" trace_id="16259acc7d064f1f8c5ee3055e62a1a9" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33950 - "GET /agent/workspace/tree HTTP/1.1" 200 OK
+2026-07-20T04:08:24.280257955Z [DBUG]  ts="2026-07-20T04:08:24.270832Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="76e277d3ad694803bad138d257143e6b" audience="system" event="request_received" span="edge"
+2026-07-20T04:08:24.280263475Z [DBUG]  ts="2026-07-20T04:08:24.274876Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="27c5312d0b654a52aeb502de91bc4209" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37176 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.280270565Z [INFO]  ts="2026-07-20T04:08:24.275951Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="76e277d3ad694803bad138d257143e6b" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37206 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:24.280280255Z [DBUG]  ts="2026-07-20T04:08:24.279572Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="76e277d3ad694803bad138d257143e6b" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33950 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37198 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.281110519Z [INFO]  ts="2026-07-20T04:08:24.280399Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="27c5312d0b654a52aeb502de91bc4209" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37208 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:24.292499530Z [DBUG]  ts="2026-07-20T04:08:24.283720Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="27c5312d0b654a52aeb502de91bc4209" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33962 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:24.420112966Z [DBUG]  ts="2026-07-20T04:08:24.398735Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="0e7bb4de6fa24eddbc27a0365ce51135" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37176 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.420119726Z [INFO]  ts="2026-07-20T04:08:24.405635Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="0e7bb4de6fa24eddbc27a0365ce51135" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37212 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:24.420129296Z [DBUG]  ts="2026-07-20T04:08:24.409931Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="0e7bb4de6fa24eddbc27a0365ce51135" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33950 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:24.795133559Z [DBUG]  ts="2026-07-20T04:08:24.753075Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="31d8a52a849f42c4b61968b9e5d4371c" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37176 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.795140999Z [INFO]  ts="2026-07-20T04:08:24.759634Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="31d8a52a849f42c4b61968b9e5d4371c" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37220 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:24.795155139Z [DBUG]  ts="2026-07-20T04:08:24.764384Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="31d8a52a849f42c4b61968b9e5d4371c" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33950 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:24.875615276Z [DBUG]  ts="2026-07-20T04:08:24.874688Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="627062dc5f07453d94fd7b8e6594ab52" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37176 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:24.888138629Z [INFO]  ts="2026-07-20T04:08:24.881624Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="627062dc5f07453d94fd7b8e6594ab52" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37234 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35340 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:24.893393352Z [DBUG]  ts="2026-07-20T04:08:24.892276Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="627062dc5f07453d94fd7b8e6594ab52" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33950 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:30.153394886Z [DBUG]  ts="2026-07-20T04:08:30.136292Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="ab9c84cd585c4198817820a8c50b5d9a" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35978 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:30.153400796Z [INFO]  ts="2026-07-20T04:08:30.145005Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="ab9c84cd585c4198817820a8c50b5d9a" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:35986 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38220 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:30.153408856Z [DBUG]  ts="2026-07-20T04:08:30.150021Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="ab9c84cd585c4198817820a8c50b5d9a" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34200 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:30.269739280Z [DBUG]  ts="2026-07-20T04:08:30.257789Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="0c261832006748a4a9cc6d95f1df6813" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35978 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:30.269750550Z [INFO]  ts="2026-07-20T04:08:30.264788Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="0c261832006748a4a9cc6d95f1df6813" audience="user" event="request_accepted" span="auth" user_id=5
+2026-07-20T04:08:30.269753170Z [DBUG]  ts="2026-07-20T04:08:30.265078Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="a21f324899464a2a85b936c0fdc68fe1" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35998 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38220 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:30.271162060Z [DBUG]  ts="2026-07-20T04:08:30.270919Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="0c261832006748a4a9cc6d95f1df6813" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34200 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35978 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:30.273417065Z [INFO]  ts="2026-07-20T04:08:30.272072Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="a21f324899464a2a85b936c0fdc68fe1" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36010 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38220 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:30.280026888Z [DBUG]  ts="2026-07-20T04:08:30.276412Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="a21f324899464a2a85b936c0fdc68fe1" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34210 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:30.423147646Z [DBUG]  ts="2026-07-20T04:08:30.421863Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="a0d5881f482f4e0a811fa30b455069ed" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35978 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:30.433314355Z [INFO]  ts="2026-07-20T04:08:30.429199Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="a0d5881f482f4e0a811fa30b455069ed" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36014 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38220 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:30.435801808Z [DBUG]  ts="2026-07-20T04:08:30.434624Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="a0d5881f482f4e0a811fa30b455069ed" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34200 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:30.847813872Z [DBUG]  ts="2026-07-20T04:08:30.747594Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="5bbd63ccf6324f44928cf6cc6e8d9137" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35978 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:30.847819632Z [INFO]  ts="2026-07-20T04:08:30.755142Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="5bbd63ccf6324f44928cf6cc6e8d9137" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36030 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38220 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:30.847828012Z [DBUG]  ts="2026-07-20T04:08:30.760257Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="5bbd63ccf6324f44928cf6cc6e8d9137" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34200 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:30.881410767Z [DBUG]  ts="2026-07-20T04:08:30.872754Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="c0e655d4998945a3b2db8363e792277e" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:35978 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:30.881418947Z [INFO]  ts="2026-07-20T04:08:30.880648Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="c0e655d4998945a3b2db8363e792277e" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:36032 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38220 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:30.895974245Z [DBUG]  ts="2026-07-20T04:08:30.891625Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="c0e655d4998945a3b2db8363e792277e" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:34200 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:36.140702782Z [DBUG]  ts="2026-07-20T04:08:36.133379Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="460a3f37b8844b85b5290e2390b93442" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37400 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:36.146872357Z [INFO]  ts="2026-07-20T04:08:36.145577Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="460a3f37b8844b85b5290e2390b93442" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37410 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38164 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:36.151618655Z [DBUG]  ts="2026-07-20T04:08:36.150614Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="460a3f37b8844b85b5290e2390b93442" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33816 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:36.294965670Z [DBUG]  ts="2026-07-20T04:08:36.256603Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="2941152595934063b0b3d0bfcf3263df" audience="system" event="request_received" span="edge"
+2026-07-20T04:08:36.294969950Z [DBUG]  ts="2026-07-20T04:08:36.262331Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="93b472ea88bf4af599f0a65fd7d2806d" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37400 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:36.294978630Z [INFO]  ts="2026-07-20T04:08:36.263652Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="2941152595934063b0b3d0bfcf3263df" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37434 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38164 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:36.294991880Z [DBUG]  ts="2026-07-20T04:08:36.268083Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="2941152595934063b0b3d0bfcf3263df" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33816 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37426 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:36.295004480Z [INFO]  ts="2026-07-20T04:08:36.268981Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="93b472ea88bf4af599f0a65fd7d2806d" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37440 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38164 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:36.295477498Z [DBUG]  ts="2026-07-20T04:08:36.275715Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="93b472ea88bf4af599f0a65fd7d2806d" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33818 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:36.383758489Z [DBUG]  ts="2026-07-20T04:08:36.382820Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="d6632b9bb9184a0b813cb520e21d3886" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37400 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:36.396148662Z [INFO]  ts="2026-07-20T04:08:36.395601Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="d6632b9bb9184a0b813cb520e21d3886" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37446 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38164 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:36.402656906Z [DBUG]  ts="2026-07-20T04:08:36.401578Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="d6632b9bb9184a0b813cb520e21d3886" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33816 - "GET /agent/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:36.840221702Z [DBUG]  ts="2026-07-20T04:08:36.744627Z" fields={"method":"GET","path":"/agent/workspace/active","minted":true} service="gateway" trace_id="8aeeeb4cab594613865ed06d6b777c37" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37400 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:36.840227222Z [INFO]  ts="2026-07-20T04:08:36.751164Z" fields={"method":"GET","path":"/agent/workspace/active"} service="gateway" trace_id="8aeeeb4cab594613865ed06d6b777c37" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37448 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38164 - "GET /api/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:36.840235502Z [DBUG]  ts="2026-07-20T04:08:36.755507Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/active","downstream_status":200} service="gateway" trace_id="8aeeeb4cab594613865ed06d6b777c37" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33816 - "GET /agent/workspace/active HTTP/1.1" 200 OK
+2026-07-20T04:08:36.881395653Z [DBUG]  ts="2026-07-20T04:08:36.867090Z" fields={"method":"GET","path":"/agent/workspace/git","minted":true} service="gateway" trace_id="6b367de6fd324909bd8ada5f71843738" audience="system" event="request_received" span="edge"
+INFO:     127.0.0.1:37400 - "POST /internal/validate HTTP/1.1" 200 OK
+2026-07-20T04:08:36.881401963Z [INFO]  ts="2026-07-20T04:08:36.874234Z" fields={"method":"GET","path":"/agent/workspace/git"} service="gateway" trace_id="6b367de6fd324909bd8ada5f71843738" audience="user" event="request_accepted" span="auth" user_id=5
+INFO:     127.0.0.1:37458 - "GET /internal/users/5/memberships HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38164 - "GET /api/workspace/git HTTP/1.1" 200 OK
+2026-07-20T04:08:36.881410133Z [DBUG]  ts="2026-07-20T04:08:36.878284Z" fields={"method":"GET","path":"http://127.0.0.1:8100/api/workspace/git","downstream_status":200} service="gateway" trace_id="6b367de6fd324909bd8ada5f71843738" audience="system" event="downstream_forwarded" span="proxy" user_id=5
+INFO:     127.0.0.1:33816 - "GET /agent/workspace/git HTTP/1.1" 200 OK
