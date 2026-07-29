@@ -59,16 +59,7 @@ COPY clients/terminal/ ./
 # next build needs the dev deps (typescript/tailwind); prune them after so the runtime tree is lean.
 RUN npm run build && npm prune --omit=dev
 
-# -----------------------------------------------------------------------------
-# Stage 2c: site-builder — the master-meeting-site workbench.
-# -----------------------------------------------------------------------------
-FROM mcr.microsoft.com/playwright:v1.56.0-jammy AS site-builder
-WORKDIR /app/site
-COPY master-meeting-site/package.json master-meeting-site/package-lock.json ./
-COPY master-meeting-site/prisma ./prisma
-RUN npm ci --no-audit --no-fund
-COPY master-meeting-site/ ./
-RUN npm run build && npm prune --omit=dev
+# removed site-builder
 
 # -----------------------------------------------------------------------------
 # Stage 3: final — assemble the all-in-one runtime image on the same Playwright base.
@@ -183,8 +174,7 @@ ENV VEXA_HF_CACHE=/opt/hf-cache
 # ── Terminal (Next.js + custom server.mjs) → /app/terminal (supervisord runs `node server.mjs`). ──
 COPY --from=terminal-builder /app/terminal /app/terminal
 
-# ── Master Meeting Site (Next.js) → /app/site ──
-COPY --from=site-builder /app/site /app/site
+# removed site-builder
 
 # ── Launchers, supervisor config, entrypoint ──────────────────────────────────────────────────────
 COPY deploy/lite/bin/vexa-bot-launch deploy/lite/bin/vexa-agent-worker deploy/lite/bin/setup-pulseaudio-sinks.sh deploy/lite/bin/provision-key.sh /usr/local/bin/

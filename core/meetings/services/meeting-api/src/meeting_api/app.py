@@ -135,7 +135,7 @@ def create_app(
 
     # --- external API for bot dispatch and batch transcription ---
     from .external_api import build_router as build_external_router
-    app.include_router(build_external_router(meeting_repo, runtime, command_publisher, recording_repo, storage))
+    app.include_router(build_external_router(meeting_repo, runtime, command_publisher, recording_repo, storage, transcript_store))
 
     return app
 

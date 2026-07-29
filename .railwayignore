@@ -29,3 +29,6 @@ core/meetings/services/meeting-api/node_modules/
 core/gateway/services/gateway/node_modules/
 core/agent/node_modules/
 core/runtime/node_modules/
+
+.git/
+.gemini/
