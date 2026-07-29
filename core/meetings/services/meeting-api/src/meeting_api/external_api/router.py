@@ -19,7 +19,7 @@ class CommandPublisher(Protocol):
 def verify_api_key(x_api_key: Optional[str] = Header(default=None, alias="X-API-Key")):
     secret = os.getenv("INTERNAL_API_SECRET", "lite-internal-secret")
     if not x_api_key or x_api_key != secret:
-        raise HTTPException(status_code=401, detail=f"Invalid or missing X-API-Key. Got: '{x_api_key}', Expected: '{secret}'")
+        raise HTTPException(status_code=401, detail="Invalid or missing X-API-Key")
     return x_api_key
 
 def _extract_native_id(platform: str, url: str) -> str:
