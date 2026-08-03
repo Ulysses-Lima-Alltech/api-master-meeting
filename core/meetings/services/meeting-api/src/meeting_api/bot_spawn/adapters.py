@@ -67,6 +67,24 @@ class SqlAlchemyMeetingRepo:
             m = (await db.execute(stmt)).scalars().first()
             return _row_to_dict(m) if m else None
 
+    async def find_active_any_user(self, platform, native_meeting_id) -> Optional[dict]:
+        from sqlalchemy import select
+
+        from ..sessions.models import Meeting
+
+        async with self._session_factory() as db:
+            stmt = (
+                select(Meeting)
+                .where(
+                    Meeting.platform == platform,
+                    Meeting.platform_specific_id == native_meeting_id,
+                    Meeting.status.in_(["requested", "joining", "awaiting_admission", "active"]),
+                )
+                .order_by(Meeting.created_at.desc(), Meeting.id.desc())
+            )
+            m = (await db.execute(stmt)).scalars().first()
+            return _row_to_dict(m) if m else None
+
     async def find_latest(self, user_id, platform, native_meeting_id) -> Optional[dict]:
         from sqlalchemy import select
 
@@ -82,6 +100,27 @@ class SqlAlchemyMeetingRepo:
                 )
                 .order_by(Meeting.created_at.desc(), Meeting.id.desc())
             )
+            m = (await db.execute(stmt)).scalars().first()
+            return _row_to_dict(m) if m else None
+
+    async def list_all_active(self) -> list[dict]:
+        from sqlalchemy import select
+        from ..sessions.models import Meeting
+        async with self._session_factory() as db:
+            stmt = (
+                select(Meeting)
+                .where(Meeting.status.in_(["requested", "joining", "awaiting_admission", "active"]))
+            )
+            meetings = (await db.execute(stmt)).scalars().all()
+            return [_row_to_dict(m) for m in meetings]
+
+    async def find_by_id(self, meeting_id) -> Optional[dict]:
+        from sqlalchemy import select
+
+        from ..sessions.models import Meeting
+
+        async with self._session_factory() as db:
+            stmt = select(Meeting).where(Meeting.id == meeting_id)
             m = (await db.execute(stmt)).scalars().first()
             return _row_to_dict(m) if m else None
 

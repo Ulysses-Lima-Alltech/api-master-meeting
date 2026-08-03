@@ -1,4 +1,4 @@
-$API_URL = 'http://localhost:3000'
+$API_URL = 'http://localhost:8080'
 $API_KEY = 'lite-internal-secret'
 $MEET_URL = 'https://meet.google.com/izd-eshg-iqq'
 
@@ -32,7 +32,7 @@ try {
     Start-Sleep -Seconds 5
 
     Write-Host '3. Encerrando a reuniao e removendo o robo...'
-    $stopResponse = Invoke-RestMethod -Uri "$API_URL/api/external/meetings/$meetingId/stop" -Method Post -Headers $headers
+    $stopResponse = Invoke-RestMethod -Uri "$API_URL/api/external/bots/$platform/$nativeMeetingId/stop" -Method Post -Headers $headers
     Write-Host 'Stop Response:'
     $stopResponse | ConvertTo-Json
 } catch {

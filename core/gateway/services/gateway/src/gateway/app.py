@@ -44,6 +44,7 @@ ROUTE_SCOPES: Dict[str, Set[str]] = {
     "/transcripts": {"tx"},
     "/meetings": {"tx"},
     "/recordings": {"tx", "bot"},
+    "/bots/debug": {"bot"},
 }
 
 # Default sentinel base URL. The DownstreamClient (real httpx or the fake ASGI transport) resolves
@@ -323,6 +324,18 @@ def create_app(
     @app.put("/bots/{platform}/{native_meeting_id}/config", status_code=202)
     async def update_config(platform: str, native_meeting_id: str, request: Request):
         return await _forward("PUT", _meeting(f"/bots/{platform}/{native_meeting_id}/config"), request)
+
+    @app.post("/bots/{platform}/{native_meeting_id}/stop")
+    async def bots_stop(platform: str, native_meeting_id: str, request: Request):
+        return await _forward("POST", _meeting(f"/bots/{platform}/{native_meeting_id}/stop"), request)
+
+    @app.post("/bots/stop-all")
+    async def bots_stop_all(request: Request):
+        return await _forward("POST", _meeting("/bots/stop-all"), request)
+
+    @app.get("/bots/debug")
+    async def proxy_debug_logs(request: Request):
+        return await _forward("GET", _meeting("/bots/debug"), request)
 
     @app.post("/bots/{platform}/{native_meeting_id}/speak")
     async def speak(platform: str, native_meeting_id: str, request: Request):

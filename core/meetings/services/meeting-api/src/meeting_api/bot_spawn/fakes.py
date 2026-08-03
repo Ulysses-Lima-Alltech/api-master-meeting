@@ -50,6 +50,17 @@ class InMemoryMeetingRepo:
                 return dict(m)
         return None
 
+    async def find_active_any_user(self, platform, native_meeting_id) -> Optional[dict]:
+        rows = [
+            m for m in self._meetings.values()
+            if m["platform"] == platform
+            and m["native_meeting_id"] == native_meeting_id
+            and m["status"] in _ACTIVE_STATUSES
+        ]
+        if not rows:
+            return None
+        return dict(max(rows, key=lambda m: m["id"]))
+
     async def find_latest(self, user_id, platform, native_meeting_id) -> Optional[dict]:
         rows = [
             m for m in self._meetings.values()
@@ -60,6 +71,16 @@ class InMemoryMeetingRepo:
         if not rows:
             return None
         return dict(max(rows, key=lambda m: m["id"]))  # id is monotonic → most recent
+
+    async def find_by_id(self, meeting_id) -> Optional[dict]:
+        row = self._meetings.get(int(meeting_id))
+        return dict(row) if row is not None else None
+
+    async def list_all_active(self) -> list[dict]:
+        return [
+            dict(m) for m in self._meetings.values()
+            if m["status"] in _ACTIVE_STATUSES
+        ]
 
     async def create_meeting(self, *, user_id, platform, native_meeting_id, data) -> dict:
         mid = self._next_id

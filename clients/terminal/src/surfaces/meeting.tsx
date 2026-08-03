@@ -483,12 +483,32 @@ function MeetingRow({ m }: { m: MeetingMock }) {
 //    the tab never leaves an empty "Untitled meeting" behind. ───────────────────────────────────────
 function PlanMeetingButton() {
   const layout = useService(LayoutServiceId);
+  
+  const stopAllBots = async () => {
+    if (!window.confirm("Isso irá remover TODOS os bots de todas as reuniões fantasmas e ativas no sistema. Tem certeza?")) return;
+    try {
+      const r = await fetch("/api/external/bots/stop-all", { method: "POST", headers: { "Content-Type": "application/json" } });
+      const data = await r.json();
+      if (!r.ok) throw new Error(data.detail || "Erro ao derrubar os bots");
+      alert(data.message || `Sucesso: ${data.count} bots removidos.`);
+      refreshMeetings();
+    } catch (e) {
+      alert("Erro: " + (e instanceof Error ? e.message : String(e)));
+    }
+  };
+
   return (
-    <button onClick={() => layout.openTab(prepDraftTabDescriptor())}
-      style={{ display: "block", width: "100%", textAlign: "left", background: "transparent", border: "1px dashed var(--line2)", color: "var(--t2)", borderRadius: 7, padding: "6px 9px", fontSize: 12, cursor: "pointer", marginBottom: 2 }}
-      onMouseEnter={(e) => (e.currentTarget.style.background = "var(--panel2)")} onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}>
-      + Planejar uma reunião
-    </button>
+    <>
+      <button onClick={() => layout.openTab(prepDraftTabDescriptor())}
+        style={{ display: "block", width: "100%", textAlign: "left", background: "transparent", border: "1px dashed var(--line2)", color: "var(--t2)", borderRadius: 7, padding: "6px 9px", fontSize: 12, cursor: "pointer", marginBottom: 2 }}
+        onMouseEnter={(e) => (e.currentTarget.style.background = "var(--panel2)")} onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}>
+        + Planejar uma reunião
+      </button>
+      <button onClick={stopAllBots}
+        style={{ display: "block", width: "100%", textAlign: "left", background: "var(--dangerbg)", border: "1px dashed var(--danger)", color: "var(--danger)", borderRadius: 7, padding: "6px 9px", fontSize: 12, cursor: "pointer", marginBottom: 2, marginTop: 10 }}>
+        Derrubar todos os bots (Limpar Fantasmas)
+      </button>
+    </>
   );
 }
 

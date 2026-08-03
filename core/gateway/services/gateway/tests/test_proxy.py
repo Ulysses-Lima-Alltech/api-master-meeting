@@ -125,6 +125,17 @@ def test_meeting_intent_put_forwards_to_meeting_api():
     assert "meeting-api" in downstream.last["url"]
 
 
+def test_legacy_post_stop_forwards_as_delete_to_meeting_api():
+    """Compat path for older clients: POST /bots/{platform}/{native}/stop is translated to the
+    canonical DELETE /bots/{platform}/{native} at meeting-api."""
+    client, downstream = _client()
+    r = client.post("/bots/google_meet/abc/stop", headers=AUTH)
+    assert r.status_code == 200
+    assert downstream.last["method"] == "DELETE"
+    assert downstream.last["url"].endswith("/bots/google_meet/abc")
+    assert "meeting-api" in downstream.last["url"]
+
+
 def test_planned_meeting_routes_forward_to_meeting_api():
     """Planned meetings: POST /meetings (create), PATCH/DELETE /meetings/{id} (row-id-addressed
     edits) forward verbatim to meeting-api — the Meetings surface's 'Plan a meeting' flow."""

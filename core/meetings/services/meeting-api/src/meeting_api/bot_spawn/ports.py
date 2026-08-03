@@ -39,6 +39,9 @@ class MeetingRepo(Protocol):
         ``None``. ``continue_meeting`` reuses this row when it is TERMINAL (completed/failed)."""
         ...
 
+    async def list_all_active(self) -> list[dict]:
+        ...
+
     async def create_meeting(
         self, *, user_id: int, platform: str, native_meeting_id: str, data: dict
     ) -> dict:
