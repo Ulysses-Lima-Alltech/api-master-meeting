@@ -17,6 +17,7 @@ $RepoRoot = $RepoRoot.Trim().Trim('"')
 $RepoRoot = [System.IO.Path]::GetFullPath($RepoRoot)
 $ComposeDir = Join-Path $RepoRoot "deploy\compose"
 $TranscriptionDir = Join-Path $RepoRoot "deploy\transcription"
+$TranscriptionEnvPath = Join-Path $TranscriptionDir ".env"
 $ComposeEnvPath = Join-Path $ComposeDir ".env"
 $EvidenceRoot = Join-Path $RepoRoot "evidencias-entrega"
 
@@ -168,14 +169,15 @@ function Ensure-Docker {
 function Start-ComposeStack {
     param(
         [Parameter(Mandatory = $true)][string]$Directory,
-        [Parameter(Mandatory = $true)][string]$Name
+        [Parameter(Mandatory = $true)][string]$Name,
+        [string]$ComposeFile = "docker-compose.yml"
     )
 
     Write-Host "Iniciando $Name..."
 
     Push-Location $Directory
     try {
-        & docker compose up -d
+        & docker compose -f $ComposeFile up -d
 
         if ($LASTEXITCODE -ne 0) {
             throw "docker compose up -d falhou para $Name."
@@ -603,14 +605,30 @@ try {
 
     Write-Section "INICIANDO OS SERVIÇOS"
 
+    $transcriptionMode = Get-DotEnvValue `
+        -Path $TranscriptionEnvPath `
+        -Name "MASTER_MEETING_TRANSCRIPTION_MODE"
+
+    if ($transcriptionMode -eq "cpu") {
+        $transcriptionComposeFile = "docker-compose.cpu.yml"
+        $transcriptionLabel = "transcrição CPU"
+        $transcriptionTimeout = 600
+    }
+    else {
+        $transcriptionComposeFile = "docker-compose.yml"
+        $transcriptionLabel = "transcrição GPU"
+        $transcriptionTimeout = 300
+    }
+
     Start-ComposeStack `
         -Directory $TranscriptionDir `
-        -Name "serviço de transcrição GPU"
+        -Name $transcriptionLabel `
+        -ComposeFile $transcriptionComposeFile
 
     Wait-HttpHealth `
         -Url "$TranscriptionBaseUrl/health" `
-        -Name "transcrição GPU" `
-        -TimeoutSeconds 300
+        -Name $transcriptionLabel `
+        -TimeoutSeconds $transcriptionTimeout
 
     Start-ComposeStack `
         -Directory $ComposeDir `

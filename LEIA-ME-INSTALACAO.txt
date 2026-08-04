@@ -1,0 +1,32 @@
+﻿MASTER MEETING — INSTALAÇÃO PROVISÓRIA PARA WINDOWS
+
+ARQUIVOS
+- INSTALAR_MASTER_MEETING.bat
+- scripts\install-master-meeting.ps1
+- scripts\master-meeting-cli.ps1 (atualizado para GPU ou CPU)
+
+COMO USAR
+1. Copie os arquivos para a raiz do repositório.
+2. Execute INSTALAR_MASTER_MEETING.bat.
+3. Autorize a janela de administrador.
+4. Reinicie o Windows e execute novamente caso o instalador solicite.
+5. Ao concluir, use o atalho "Master Meeting" na Área de Trabalho.
+
+O INSTALADOR
+- habilita WSL 2;
+- instala Git e Docker Desktop por WinGet quando ausentes;
+- preserva .env já existente;
+- gera segredos fortes para uma instalação nova;
+- detecta GPU NVIDIA e usa CPU como alternativa;
+- constrói o bot e os serviços Docker;
+- sobe a transcrição e a stack principal;
+- valida gateway e admin-api;
+- cria o atalho de execução.
+
+LIMITES
+- destinado a Windows 10/11 Desktop;
+- pode exigir reinicialização;
+- a primeira instalação baixa imagens e modelos grandes;
+- não instala automaticamente driver NVIDIA ou altera BIOS/UEFI;
+- não publica a instalação na internet;
+- não inclui credenciais de LLM para a futura camada inteligente.
