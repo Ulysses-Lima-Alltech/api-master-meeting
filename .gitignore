@@ -29,3 +29,5 @@ docs/views/*
 
 # transcription service downloaded model weights (runtime cache)
 deploy/transcription/models/
+
+evidencias-entrega/
