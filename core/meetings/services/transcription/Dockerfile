@@ -1,8 +1,8 @@
-# syntax=docker/dockerfile:1
-# Transcription worker (GPU) — faster-whisper / CTranslate2 on CUDA. CTranslate2 ships its own
+﻿# syntax=docker/dockerfile:1
+# Transcription worker (GPU) â€” faster-whisper / CTranslate2 on CUDA. CTranslate2 ships its own
 # CUDA support (no PyTorch); the cuda-cudnn runtime base provides the libs. Build context is the
 # carve root (compose `context: ../..`) to match the other core services.
-FROM nvidia/cuda:12.3.2-cudnn9-runtime-ubuntu22.04
+FROM nvidia/cuda:12.8.0-cudnn-runtime-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
     UV_LINK_MODE=copy \
