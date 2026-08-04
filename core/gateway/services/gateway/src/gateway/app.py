@@ -259,7 +259,21 @@ def create_app(
             media_type = resp_headers.get("content-type", "application/json")
         except Exception:
             pass
-        return Response(content=resp.content, status_code=resp.status_code, media_type=media_type)
+
+        # JSON is UTF-8. Explicitly declare the charset at the public edge so
+        # Windows PowerShell and other strict clients decode accented text
+        # correctly instead of treating the bytes as Windows-1252.
+        if (
+            media_type.lower().startswith("application/json")
+            and "charset=" not in media_type.lower()
+        ):
+            media_type = f"{media_type}; charset=utf-8"
+
+        return Response(
+            content=resp.content,
+            status_code=resp.status_code,
+            media_type=media_type,
+        )
 
     def _meeting(path: str) -> str:
         return f"{meeting_api_url}{path}"

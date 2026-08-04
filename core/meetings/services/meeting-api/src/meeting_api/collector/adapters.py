@@ -257,16 +257,70 @@ class SqlAlchemyTranscriptStore:
         # (use-vexa-websocket.ts: `if (!seg.absolute_start_time) continue`). Derive it from the
         # meeting start + the relative offset when a producer didn't supply it, so the historical
         # transcript renders (the carve served only relative start/end → the UI dropped every segment).
-        from datetime import timedelta
+        from datetime import datetime, timedelta, timezone
+
         base = meeting.start_time or meeting.created_at
-        if base is not None:
-            for s in segments:
-                if not s.get("absolute_start_time") and s.get("start") is not None:
-                    try:
-                        s["absolute_start_time"] = (base + timedelta(seconds=float(s["start"]))).isoformat()
-                        s["absolute_end_time"] = (base + timedelta(seconds=float(s.get("end") or s["start"]))).isoformat()
-                    except Exception:
-                        pass
+
+        # Timestamps persistidos no banco s?o UTC, ainda que algumas colunas
+        # antigas sejam carregadas como datetime sem timezone.
+        if base is not None and base.tzinfo is None:
+            base = base.replace(tzinfo=timezone.utc)
+
+        def _segment_time_to_iso(value):
+            """Accept both current epoch seconds and legacy relative offsets."""
+            seconds = float(value)
+
+            # Modern producers use Unix epoch seconds. A relative meeting
+            # offset will never realistically reach 100 million seconds.
+            if seconds >= 100_000_000:
+                return datetime.fromtimestamp(
+                    seconds,
+                    tz=timezone.utc,
+                ).isoformat()
+
+            # Backward compatibility for older segments whose start/end were
+            # relative to the meeting start.
+            if base is None:
+                return None
+
+            return (
+                base + timedelta(seconds=seconds)
+            ).isoformat()
+
+        for s in segments:
+            try:
+                if (
+                    not s.get("absolute_start_time")
+                    and s.get("start") is not None
+                ):
+                    absolute_start = _segment_time_to_iso(
+                        s["start"]
+                    )
+
+                    if absolute_start:
+                        s["absolute_start_time"] = absolute_start
+
+                if (
+                    not s.get("absolute_end_time")
+                    and (
+                        s.get("end") is not None
+                        or s.get("start") is not None
+                    )
+                ):
+                    end_value = (
+                        s["end"]
+                        if s.get("end") is not None
+                        else s["start"]
+                    )
+
+                    absolute_end = _segment_time_to_iso(
+                        end_value
+                    )
+
+                    if absolute_end:
+                        s["absolute_end_time"] = absolute_end
+            except (TypeError, ValueError, OverflowError):
+                pass
         return {
             "id": meeting.id,
             "platform": meeting.platform,
