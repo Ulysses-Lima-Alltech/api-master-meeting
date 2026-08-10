@@ -1,0 +1,33 @@
+﻿MASTER MEETING — PAINEL DE CHAVES DA API
+
+O pacote:
+- troca a página principal do Terminal pelo gerenciador de chaves;
+- preserva o Terminal antigo em http://localhost:13000/terminal;
+- cria rotas server-side em /api/master/*;
+- não exige login de usuário;
+- mantém VEXA_ADMIN_API_KEY somente no servidor;
+- bloqueia acesso não-local por padrão.
+
+COMO APLICAR
+
+1. Extraia este ZIP.
+2. Abra PowerShell na pasta extraída.
+3. Execute:
+
+   Set-ExecutionPolicy -Scope Process Bypass
+   .\APLICAR_PAINEL_API_MASTER_MEETING.ps1 -RepositoryRoot "C:\Users\ulyss\Desktop\Meet\api-master-meeting"
+
+4. Recompile o Terminal:
+
+   cd C:\Users\ulyss\Desktop\Meet\api-master-meeting
+   docker compose --env-file deploy\compose\.env -f deploy\compose\docker-compose.yml up -d --build terminal
+
+5. Abra:
+
+   http://localhost:13000
+
+SEGURANÇA
+
+O painel não autentica usuário e foi desenhado para localhost.
+Não exponha a porta 13000 na internet.
+MASTER_API_PANEL_ALLOW_REMOTE=true só deve ser usado atrás de autenticação administrativa.
